@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd DCVersion="0.8.4 beta" ConfigVersion="10">
+  <Configuration Save="True" SortOrder="0">
+    <UseConfigInProgramDir>False</UseConfigInProgramDir>
+  </Configuration>
+  <Colors>
+    <FileFilters>
+      <Filter>
+        <Name>Pascal sources</Name>
+        <FileMasks>*.pas;*.pp</FileMasks>
+        <Color>32768</Color>
+        <Attributes/>
+      </Filter>
+      <Filter>
+        <Name>Pascal binaries</Name>
+        <FileMasks>*.ppu;*.o;*.dcu</FileMasks>
+        <Color>16711680</Color>
+        <Attributes/>
+      </Filter>
+      <Filter>
+        <Name>Specified Executables</Name>
+        <FileMasks>*</FileMasks>
+        <Color>255</Color>
+        <Attributes>-rwxrwxr*x</Attributes>
+      </Filter>
+      <Filter>
+        <Name>Executables</Name>
+        <FileMasks>*</FileMasks>
+        <Color>32768</Color>
+        <Attributes>-*x*</Attributes>
+      </Filter>
+    </FileFilters>
+    <UseCursorBorder>False</UseCursorBorder>
+    <CursorBorderColor>-2147483635</CursorBorderColor>
+    <UseFrameCursor>False</UseFrameCursor>
+    <Foreground>-2147483640</Foreground>
+    <Background>-2147483643</Background>
+    <Background2>-2147483643</Background2>
+    <Cursor>-2147483635</Cursor>
+    <CursorText>-2147483634</CursorText>
+    <Mark>128</Mark>
+    <InactiveCursor>-2147483645</InactiveCursor>
+    <InactiveMark>128</InactiveMark>
+    <UseInvertedSelection>False</UseInvertedSelection>
+    <UseInactiveSelColor>False</UseInactiveSelColor>
+    <AllowOverColor>True</AllowOverColor>
+    <InactivePanelBrightness>100</InactivePanelBrightness>
+    <FreeSpaceIndicator>
+      <UseGradient>True</UseGradient>
+      <ForeColor>0</ForeColor>
+      <BackColor>16777215</BackColor>
+    </FreeSpaceIndicator>
+    <gBorderFrameWidth>1</gBorderFrameWidth>
+  </Colors>
+  <Plugins>
+    <WlxPlugins>
+      <WlxPlugin Enabled="True">
+        <Name>wlxMplayer</Name>
+        <Path>%COMMANDER_PATH%/plugins/wlx/wlxmplayer/wlxmplayer.wlx</Path>
+        <DetectString>(EXT="MPG")|(EXT="AVI")|(EXT="MPEG")|(EXT="FLV")</DetectString>
+      </WlxPlugin>
+    </WlxPlugins>
+    <DsxPlugins/>
+    <WcxPlugins>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>zip</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>735</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tar</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>223</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>bz2</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>91</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tbz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>gz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>91</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tgz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>lzma</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>1</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tlz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>xz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>91</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>txz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>zipx</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>223</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>cpio</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/cpio/cpio.wcx</Path>
+        <Flags>4</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>deb</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/deb/deb.wcx</Path>
+        <Flags>4</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>rpm</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/rpm/rpm.wcx</Path>
+        <Flags>4</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>rar</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/unrar/unrar.wcx</Path>
+        <Flags>68</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>jar</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>990</Flags>
+      </WcxPlugin>
+    </WcxPlugins>
+    <WdxPlugins>
+      <WdxPlugin>
+        <Name>deb_wdx</Name>
+        <Path>%COMMANDER_PATH%/plugins/wdx/deb_wdx/deb_wdx.wdx</Path>
+        <DetectString>EXT="DEB"</DetectString>
+      </WdxPlugin>
+      <WdxPlugin>
+        <Name>rpm_wdx</Name>
+        <Path>%COMMANDER_PATH%/plugins/wdx/rpm_wdx/rpm_wdx.wdx</Path>
+        <DetectString>EXT="RPM"</DetectString>
+      </WdxPlugin>
+      <WdxPlugin>
+        <Name>audioinfo</Name>
+        <Path>%COMMANDER_PATH%/plugins/wdx/audioinfo/audioinfo.wdx</Path>
+        <DetectString>(EXT="MP3") | (EXT="MP2") | (EXT="MP1") | (EXT="OGG") | (EXT="WMA") | (EXT="WAV") | (EXT="VQF") | (EXT="AAC") | (EXT="APE") | (EXT="MPC") | (EXT="FLAC") | (EXT="CDA") | (EXT="TTA") | (EXT="AC3") | (EXT="DTS") | (EXT="WV") | (EXT="WVC") | (EXT="OFR") | (EXT="OFS") | (EXT="M4A") | (EXT="MP4")</DetectString>
+      </WdxPlugin>
+    </WdxPlugins>
+    <WfxPlugins>
+      <WfxPlugin Enabled="True">
+        <Name>FTP</Name>
+        <Path>%commander_path%/plugins/wfx/ftp/ftp.wfx</Path>
+      </WfxPlugin>
+      <WfxPlugin Enabled="True">
+        <Name>Windows Network</Name>
+        <Path>%commander_path%/plugins/wfx/samba/samba.wfx</Path>
+      </WfxPlugin>
+    </WfxPlugins>
+  </Plugins>
+  <Toolbars>
+    <MainToolbar>
+      <Row>
+        <Command>
+          <ID>{6CB479DA-3CEC-4C43-A3C7-24B5C83C77D2}</ID>
+          <Icon>cm_refresh</Icon>
+          <Command>cm_Refresh</Command>
+        </Command>
+        <Command>
+          <ID>{83F4CAFF-4B09-41D2-9C20-DFD7249CCB09}</ID>
+          <Icon>cm_runterm</Icon>
+          <Command>cm_RunTerm</Command>
+        </Command>
+        <Command>
+          <ID>{30FCC57D-7132-4815-9FF2-635D7C4625B5}</ID>
+          <Icon>cm_options</Icon>
+          <Command>cm_Options</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{B1722206-F6CD-4A8C-BAD3-D1C22461E5EB}</ID>
+          <Icon>cm_briefview</Icon>
+          <Command>cm_BriefView</Command>
+        </Command>
+        <Command>
+          <ID>{0FF8ACF8-8EEE-4D47-A1C0-6EB3E424F86B}</ID>
+          <Icon>cm_columnsview</Icon>
+          <Command>cm_ColumnsView</Command>
+        </Command>
+        <Command>
+          <ID>{3254536A-D1C8-418E-BFAE-905F47D5B4C3}</ID>
+          <Icon>cm_thumbnailsview</Icon>
+          <Command>cm_ThumbnailsView</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{8F01D337-25E0-454E-9C70-82931D499C19}</ID>
+          <Icon>cm_flatview</Icon>
+          <Command>cm_FlatView</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{4AD1964E-D55F-46AA-B52A-763EDCC41E5D}</ID>
+          <Icon>cm_viewhistoryprev</Icon>
+          <Command>cm_ViewHistoryPrev</Command>
+        </Command>
+        <Command>
+          <ID>{0DB50BD8-441C-45D2-8C1C-6EC546A3BE85}</ID>
+          <Icon>cm_viewhistorynext</Icon>
+          <Command>cm_ViewHistoryNext</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{BF43E9D9-4D44-46BB-886C-1A8863460639}</ID>
+          <Icon>cm_markplus</Icon>
+          <Command>cm_MarkPlus</Command>
+        </Command>
+        <Command>
+          <ID>{065E1768-D3C6-4238-AB4B-CFA252E3E018}</ID>
+          <Icon>cm_markminus</Icon>
+          <Command>cm_MarkMinus</Command>
+        </Command>
+        <Command>
+          <ID>{ACAA11C0-D681-461C-A217-8C5E11E807ED}</ID>
+          <Icon>cm_markinvert</Icon>
+          <Command>cm_MarkInvert</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{802EC4BD-FDD9-40D1-A0FF-E448F22127B2}</ID>
+          <Icon>cm_packfiles</Icon>
+          <Command>cm_PackFiles</Command>
+        </Command>
+        <Command>
+          <ID>{27401304-D94D-4FF1-8DBB-0E74823E1EFB}</ID>
+          <Icon>cm_extractfiles</Icon>
+          <Command>cm_ExtractFiles</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{16BC6118-B7D8-4122-980F-F30EA34F254E}</ID>
+          <Icon>cm_search</Icon>
+          <Command>cm_Search</Command>
+        </Command>
+        <Command>
+          <ID>{7D5FC265-931F-43B7-ACD0-CACC21F5CA9F}</ID>
+          <Icon>cm_multirename</Icon>
+          <Command>cm_MultiRename</Command>
+        </Command>
+        <Command>
+          <ID>{82B3B8B7-021F-4370-BC5A-C338C5660920}</ID>
+          <Icon>cm_syncdirs</Icon>
+          <Command>cm_SyncDirs</Command>
+        </Command>
+        <Command>
+          <ID>{F48C3D88-DBBF-4907-8CF8-4B81B6B98A6B}</ID>
+          <Icon>cm_copyfullnamestoclip</Icon>
+          <Command>cm_CopyFullNamesToClip</Command>
+        </Command>
+      </Row>
+    </MainToolbar>
+  </Toolbars>
+  <MultiRenamePresets>
+    <LastPreset/>
+    <Presets/>
+  </MultiRenamePresets>
+  <Tabs>
+    <OpenedTabs>
+      <Left>
+        <ActiveTab>3</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Gary Moore/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="Third-Party">/home/jbenden/Source/</Path>
+                  <Path Filename="CertikOS">/home/jbenden/Source/Third-Party/</Path>
+                  <Path Filename="..">/home/jbenden/Source/Third-Party/CertikOS/</Path>
+                  <Path Filename="CertikOS">/home/jbenden/Source/Third-Party/</Path>
+                  <Path Filename="Pictures">/home/jbenden/</Path>
+                  <Path Filename="Tarja Turunen">/home/jbenden/Pictures/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/Tarja Turunen/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="zpipe.c">/home/jbenden/Source/</Path>
+                  <Path Filename="mnt">/</Path>
+                  <Path Filename="..">/mnt/</Path>
+                  <Path Filename="run">/</Path>
+                  <Path Filename="user">/run/</Path>
+                  <Path Filename="1000">/run/user/</Path>
+                  <Path Filename="gvfs">/run/user/1000/</Path>
+                  <Path Filename="..">/run/user/1000/gvfs/</Path>
+                  <Path Filename="gvfs">/run/user/1000/</Path>
+                  <Path Filename="">/run/user/1000/gvfs/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="assets">/home/jbenden/Documents/Minecraft Texture Packs/ovos rustic redemption/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="ddns-tools.git">/home/jbenden/Downloads/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/ddns-tools.git/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/</Path>
+                  <Path Filename=".fonts">/home/jbenden/</Path>
+                  <Path Filename="FiraCode">/home/jbenden/.fonts/</Path>
+                  <Path Filename="..">/home/jbenden/.fonts/FiraCode/</Path>
+                  <Path Filename="Fira">/home/jbenden/.fonts/</Path>
+                  <Path Filename="..">/home/jbenden/.fonts/Fira/</Path>
+                  <Path Filename="FiraCode">/home/jbenden/.fonts/</Path>
+                  <Path Filename="..">/home/jbenden/.fonts/FiraCode/</Path>
+                  <Path Filename="">/home/jbenden/.fonts/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="assets">/home/jbenden/Documents/Minecraft Texture Packs/ovos rustic redemption/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="ddns-tools.git">/home/jbenden/Downloads/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/ddns-tools.git/</Path>
+                  <Path Filename="">/home/jbenden/Downloads/</Path>
+                  <Path Filename="">/home/jbenden/Documents/Personal/Medical/MedicationCard/</Path>
+                  <Path Filename="ddns-tools.git">./</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="">/home/jbenden/Documents/</Path>
+                  <Path Filename="Ada-and-Embedded">/home/jbenden/Downloads/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/Ada-and-Embedded/</Path>
+                  <Path Filename="Ada-and-Embedded">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="us.benden">/home/jbenden/Source/</Path>
+                  <Path Filename="aircrack-ng-infra-keys">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/aircrack-ng-infra-keys/</Path>
+                  <Path Filename="ac-cov-test">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/ac-cov-test/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="">/home/jbenden/Source/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="assets">/home/jbenden/Documents/Minecraft Texture Packs/ovos rustic redemption/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="ddns-tools.git">/home/jbenden/Downloads/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/ddns-tools.git/</Path>
+                  <Path Filename="">/home/jbenden/Downloads/</Path>
+                  <Path Filename="">/home/jbenden/Documents/Personal/Medical/MedicationCard/</Path>
+                  <Path Filename="ddns-tools.git">./</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="">/home/jbenden/Documents/</Path>
+                  <Path Filename="Ada-and-Embedded">/home/jbenden/Downloads/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/Ada-and-Embedded/</Path>
+                  <Path Filename="Ada-and-Embedded">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="us.benden">/home/jbenden/Source/</Path>
+                  <Path Filename="aircrack-ng-infra-keys">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/aircrack-ng-infra-keys/</Path>
+                  <Path Filename="ac-cov-test">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/ac-cov-test/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="testfile">/home/jbenden/Downloads/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/testfile/</Path>
+                  <Path Filename="testfile">/home/jbenden/Downloads/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/testfile/</Path>
+                  <Path Filename="iccfmt.ps">/home/jbenden/Downloads/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Left>
+      <Right>
+        <ActiveTab>4</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Muse">/home/jbenden/Music/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Music/Muse/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Muse/Unknown/</Path>
+                  <Path Filename="Disks">/home/jbenden/</Path>
+                  <Path Filename="parallel_studio_xe_2018_update3_professional_edition">/home/jbenden/Disks/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Fonts">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Fonts/</Path>
+                  <Path Filename="Themes">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Themes/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Caravan Palace - Le Ring - Live.f248+251.webm">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Porn">/home/jbenden/Videos/</Path>
+                  <Path Filename="ariel-3.mp4">/home/jbenden/Videos/Porn/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Pantera">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Pantera - Cemetery Gates (Official Video).f244+251.webm">/home/jbenden/Videos/Music Videos/Pantera/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="Third-Party">/home/jbenden/Source/</Path>
+                  <Path Filename="cmocka-1.1.1">/home/jbenden/Source/Third-Party/</Path>
+                  <Path Filename="example">/home/jbenden/Source/Third-Party/cmocka-1.1.1/</Path>
+                  <Path Filename="chef_wrap">/home/jbenden/Source/Third-Party/cmocka-1.1.1/example/</Path>
+                  <Path Filename="..">/home/jbenden/Source/Third-Party/cmocka-1.1.1/example/chef_wrap/</Path>
+                  <Path Filename="Music">/home/jbenden/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Music/</Path>
+                  <Path Filename="Youtube">/home/jbenden/Music/Green Day/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Green Day/Youtube/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Porn">/home/jbenden/Videos/</Path>
+                  <Path Filename="ariel-3.mp4">/home/jbenden/Videos/Porn/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/VMs/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music">/home/jbenden/</Path>
+                  <Path Filename="Pantera">/home/jbenden/Music/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Pantera/</Path>
+                  <Path Filename="Gary Moore">/home/jbenden/Music/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Music/Gary Moore/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Gary Moore/Unknown/</Path>
+                  <Path Filename="Extreme">/home/jbenden/Music/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Extreme/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Porn">/home/jbenden/Videos/</Path>
+                  <Path Filename="ariel-3.mp4">/home/jbenden/Videos/Porn/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Caravan Palace - Le Ring - Live.f248+251.webm">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Muse">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Muse/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Music">/home/jbenden/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Music/</Path>
+                  <Path Filename="Youtube">/home/jbenden/Music/Green Day/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Green Day/Youtube/</Path>
+                  <Path Filename="Muse">/home/jbenden/Music/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Music/Muse/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Muse/Unknown/</Path>
+                  <Path Filename="Disks">/home/jbenden/</Path>
+                  <Path Filename="parallel_studio_xe_2018_update3_professional_edition">/home/jbenden/Disks/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Fonts">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Fonts/</Path>
+                  <Path Filename="Themes">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Themes/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Caravan Palace - Le Ring - Live.f248+251.webm">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Porn">/home/jbenden/Videos/</Path>
+                  <Path Filename="ariel-3.mp4">/home/jbenden/Videos/Porn/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Pantera">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Pantera - Cemetery Gates (Official Video).f244+251.webm">/home/jbenden/Videos/Music Videos/Pantera/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="Third-Party">/home/jbenden/Source/</Path>
+                  <Path Filename="cmocka-1.1.1">/home/jbenden/Source/Third-Party/</Path>
+                  <Path Filename="example">/home/jbenden/Source/Third-Party/cmocka-1.1.1/</Path>
+                  <Path Filename="chef_wrap">/home/jbenden/Source/Third-Party/cmocka-1.1.1/example/</Path>
+                  <Path Filename="..">/home/jbenden/Source/Third-Party/cmocka-1.1.1/example/chef_wrap/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Third-Party">/home/jbenden/Source/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Epica">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Epica/</Path>
+                  <Path Filename="Epica">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Music">/home/jbenden/</Path>
+                  <Path Filename="Epica">/home/jbenden/Music/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Epica/</Path>
+                  <Path Filename="Epica">/home/jbenden/Music/</Path>
+                  <Path Filename="Reference">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Reference/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Accounting Data">/home/jbenden/Documents/</Path>
+                  <Path Filename="FFOL-Exports">/home/jbenden/Documents/Accounting Data/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Accounting Data/FFOL-Exports/</Path>
+                  <Path Filename="DSCU-Exports">/home/jbenden/Documents/Accounting Data/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Accounting Data/DSCU-Exports/</Path>
+                  <Path Filename="Reference">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Reference/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Caravan Palace 2010 live.f134+140.mp4">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Green Day - Reading Festival 2013 (Full Show).f247+251.webm">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Pantera">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="PANTERA - (1992.06) Hollywood, CA. (THE Best PANTERA bootleg!).f136+140.mp4">/home/jbenden/Videos/Music Videos/Pantera/</Path>
+                  <Path Filename="Disks">/home/jbenden/</Path>
+                  <Path Filename="artful-desktop-lxqt-amd64.iso">/home/jbenden/Disks/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Aircrack-ng">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Aircrack-ng/</Path>
+                  <Path Filename="Active Projects">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Active Projects/</Path>
+                  <Path Filename="Samsung">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Samsung/</Path>
+                  <Path Filename="Samsung">/home/jbenden/Documents/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="iOS Backup Files">/home/jbenden/Source/</Path>
+                  <Path Filename="..">/home/jbenden/Source/iOS Backup Files/</Path>
+                  <Path Filename="Code erasures">/home/jbenden/Source/</Path>
+                  <Path Filename="">/home/jbenden/Source/Code erasures/</Path>
+                  <Path Filename="Reference">/home/jbenden/Source/</Path>
+                  <Path Filename="Ada">/home/jbenden/Source/Reference/</Path>
+                  <Path Filename="..">/home/jbenden/Source/Reference/Ada/</Path>
+                  <Path Filename="Ada">/home/jbenden/Source/Reference/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="Third-Party">/home/jbenden/Source/</Path>
+                  <Path Filename="cmocka-1.1.1">/home/jbenden/Source/Third-Party/</Path>
+                  <Path Filename="example">/home/jbenden/Source/Third-Party/cmocka-1.1.1/</Path>
+                  <Path Filename="chef_wrap">/home/jbenden/Source/Third-Party/cmocka-1.1.1/example/</Path>
+                  <Path Filename="CMakeLists.txt">/home/jbenden/Source/Third-Party/cmocka-1.1.1/example/chef_wrap/</Path>
+                  <Path Filename="Third-Party">/home/jbenden/Source/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Epica">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Epica/</Path>
+                  <Path Filename="Epica">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Music">/home/jbenden/</Path>
+                  <Path Filename="Epica">/home/jbenden/Music/</Path>
+                  <Path Filename="..">/home/jbenden/Music/Epica/</Path>
+                  <Path Filename="Epica">/home/jbenden/Music/</Path>
+                  <Path Filename="Reference">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Reference/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Accounting Data">/home/jbenden/Documents/</Path>
+                  <Path Filename="FFOL-Exports">/home/jbenden/Documents/Accounting Data/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Accounting Data/FFOL-Exports/</Path>
+                  <Path Filename="DSCU-Exports">/home/jbenden/Documents/Accounting Data/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Accounting Data/DSCU-Exports/</Path>
+                  <Path Filename="Reference">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Reference/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Caravan Palace 2010 live.f134+140.mp4">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Green Day - Reading Festival 2013 (Full Show).f247+251.webm">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Pantera">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="PANTERA - (1992.06) Hollywood, CA. (THE Best PANTERA bootleg!).f136+140.mp4">/home/jbenden/Videos/Music Videos/Pantera/</Path>
+                  <Path Filename="Disks">/home/jbenden/</Path>
+                  <Path Filename="artful-desktop-lxqt-amd64.iso">/home/jbenden/Disks/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Aircrack-ng">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Aircrack-ng/</Path>
+                  <Path Filename="Active Projects">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Active Projects/</Path>
+                  <Path Filename="Samsung">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Samsung/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/</Path>
+                  <Path Filename="Disks">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Disks/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Coldplay/</Path>
+                  <Path Filename="Eminem">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown Album">/home/jbenden/Videos/Music Videos/Eminem/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Eminem/Unknown Album/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Eminem/</Path>
+                  <Path Filename="Epica">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Epica/</Path>
+                  <Path Filename="Marilyn Manson">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Marilyn Manson/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Marilyn Manson/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Marilyn Manson/</Path>
+                  <Path Filename="Maroon 5">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Maroon 5/</Path>
+                  <Path Filename="Megadeth">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Muse">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Muse/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Muse/Unknown/</Path>
+                  <Path Filename="Muse - Live At Teignmouth 2009 (1080p 50fps).f299+140.mp4">/home/jbenden/Videos/Music Videos/Muse/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Evanescence">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Evanescence/</Path>
+                  <Path Filename="Gary Moore">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Gary Moore/</Path>
+                  <Path Filename="Megadeth">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Tarja Turunen">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Fonts">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Fonts/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Tarja Turunen">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Caravan Palace - Le Ring - Live.f248+251.webm">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Coldplay">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Coldplay - The Scientist (Rock In Rio 2011) - HDTV (1080i).f137+140.mp4">/home/jbenden/Videos/Music Videos/Coldplay/</Path>
+                  <Path Filename="Deadmau5">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music">/home/jbenden/Videos/Music Videos/Deadmau5/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Deadmau5/Music/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Deadmau5/</Path>
+                  <Path Filename="Dragonette">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown Album">/home/jbenden/Videos/Music Videos/Dragonette/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Dragonette/Unknown Album/</Path>
+                  <Path Filename="Unknown Album">/home/jbenden/Videos/Music Videos/Dragonette/</Path>
+                  <Path Filename="00 - Merry Xmas (Says Your Text Message).m4v">/home/jbenden/Videos/Music Videos/Dragonette/Unknown Album/</Path>
+                  <Path Filename="Eagles">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Eagles - hell freezes over - primary track.mkv">/home/jbenden/Videos/Music Videos/Eagles/</Path>
+                  <Path Filename="Eminem">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown Album">/home/jbenden/Videos/Music Videos/Eminem/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Eminem/Unknown Album/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Eminem/</Path>
+                  <Path Filename="Epica">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Epica/</Path>
+                  <Path Filename="Eric Clapton">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown Album">/home/jbenden/Videos/Music Videos/Eric Clapton/</Path>
+                  <Path Filename="00 - While my guitar gently weeps.m4v">/home/jbenden/Videos/Music Videos/Eric Clapton/Unknown Album/</Path>
+                  <Path Filename="Evanescence">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Evanescence/</Path>
+                  <Path Filename="Extreme">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Extreme - More Than Words.f244+251.webm">/home/jbenden/Videos/Music Videos/Extreme/</Path>
+                  <Path Filename="Flogging Molly">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Flogging Molly/</Path>
+                  <Path Filename="Gary Moore">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Gary Moore/</Path>
+                  <Path Filename="Katy Perry">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Katy Perry/</Path>
+                  <Path Filename="Kid Rock">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown Album">/home/jbenden/Videos/Music Videos/Kid Rock/</Path>
+                  <Path Filename="00 - Only God Knows Why.m4v">/home/jbenden/Videos/Music Videos/Kid Rock/Unknown Album/</Path>
+                  <Path Filename="Kid Rock">/home/jbenden/Videos/Music Videos/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Aircrack-ng">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Aircrack-ng/</Path>
+                  <Path Filename="Active Projects">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Active Projects/</Path>
+                  <Path Filename="Samsung">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Samsung/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/</Path>
+                  <Path Filename="Disks">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Disks/</Path>
+                  <Path Filename="VMs">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/VMs/</Path>
+                  <Path Filename=".fonts">/home/jbenden/</Path>
+                  <Path Filename="adobe-fonts">/home/jbenden/.fonts/</Path>
+                  <Path Filename="source-code-pro">/home/jbenden/.fonts/adobe-fonts/</Path>
+                  <Path Filename="OTF">/home/jbenden/.fonts/adobe-fonts/source-code-pro/</Path>
+                  <Path Filename="..">/home/jbenden/.fonts/adobe-fonts/source-code-pro/OTF/</Path>
+                  <Path Filename="..">/home/jbenden/.fonts/adobe-fonts/source-code-pro/</Path>
+                  <Path Filename="..">/home/jbenden/.fonts/adobe-fonts/</Path>
+                  <Path Filename="adobe-fonts">/home/jbenden/.fonts/</Path>
+                  <Path Filename="..">/home/jbenden/.fonts/adobe-fonts/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Downloads/</Path>
+                  <Path Filename="bin">/home/jbenden/</Path>
+                  <Path Filename="palemoon">/home/jbenden/bin/</Path>
+                  <Path Filename="fonts">/home/jbenden/bin/palemoon/</Path>
+                  <Path Filename="..">/home/jbenden/bin/palemoon/fonts/</Path>
+                  <Path Filename="defaults">/home/jbenden/bin/palemoon/</Path>
+                  <Path Filename="..">/home/jbenden/bin/palemoon/defaults/</Path>
+                  <Path Filename="browser">/home/jbenden/bin/palemoon/</Path>
+                  <Path Filename="searchplugins">/home/jbenden/bin/palemoon/browser/</Path>
+                  <Path Filename="..">/home/jbenden/bin/palemoon/browser/searchplugins/</Path>
+                  <Path Filename="extensions">/home/jbenden/bin/palemoon/browser/</Path>
+                  <Path Filename="..">/home/jbenden/bin/palemoon/browser/extensions/</Path>
+                  <Path Filename="components">/home/jbenden/bin/palemoon/browser/</Path>
+                  <Path Filename="..">/home/jbenden/bin/palemoon/browser/components/</Path>
+                  <Path Filename="chrome">/home/jbenden/bin/palemoon/browser/</Path>
+                  <Path Filename="..">/home/jbenden/bin/palemoon/browser/chrome/</Path>
+                  <Path Filename="..">/home/jbenden/bin/palemoon/browser/</Path>
+                  <Path Filename="palemoon">/home/jbenden/bin/palemoon/</Path>
+                  <Path Filename="Disks">/home/jbenden/</Path>
+                  <Path Filename="..">/home/jbenden/Disks/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="LibreOffice Templates">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/LibreOffice Templates/</Path>
+                  <Path Filename="Fonts">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Fonts/</Path>
+                  <Path Filename="Accounting Data">/home/jbenden/Documents/</Path>
+                  <Path Filename="DSCU-Exports">/home/jbenden/Documents/Accounting Data/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Accounting Data/DSCU-Exports/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Unknown Album">/home/jbenden/Videos/Music Videos/Eminem/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Eminem/Unknown Album/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Eminem/</Path>
+                  <Path Filename="Epica">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Epica/</Path>
+                  <Path Filename="Marilyn Manson">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Marilyn Manson/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Marilyn Manson/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Marilyn Manson/</Path>
+                  <Path Filename="Maroon 5">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Maroon 5/</Path>
+                  <Path Filename="Megadeth">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Muse">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Muse/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Muse/Unknown/</Path>
+                  <Path Filename="Muse - Live At Teignmouth 2009 (1080p 50fps).f299+140.mp4">/home/jbenden/Videos/Music Videos/Muse/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Evanescence">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Evanescence/</Path>
+                  <Path Filename="Gary Moore">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Gary Moore/</Path>
+                  <Path Filename="Megadeth">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Tarja Turunen">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Pictures">/home/jbenden/</Path>
+                  <Path Filename="Screenshots">/home/jbenden/Pictures/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/Screenshots/</Path>
+                  <Path Filename="Wallpapers">/home/jbenden/Pictures/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/Wallpapers/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Maroon 5">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Maroon 5/</Path>
+                  <Path Filename="Megadeth">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Muse">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Muse/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Muse/Unknown/</Path>
+                  <Path Filename="Muse - Live At Teignmouth 2009 (1080p 50fps).f299+140.mp4">/home/jbenden/Videos/Music Videos/Muse/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Green Day">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Green Day/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Evanescence">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Evanescence/</Path>
+                  <Path Filename="Gary Moore">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Gary Moore/</Path>
+                  <Path Filename="Megadeth">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Tarja Turunen">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Pictures">/home/jbenden/</Path>
+                  <Path Filename="Screenshots">/home/jbenden/Pictures/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/Screenshots/</Path>
+                  <Path Filename="Wallpapers">/home/jbenden/Pictures/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/Wallpapers/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Fonts">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Fonts/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="Adding_Scheduler_Activations_to_Mach_30.pdf">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Programming Courses">/home/jbenden/Videos/</Path>
+                  <Path Filename="FOSDEM 2018">/home/jbenden/Videos/Programming Courses/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Programming Courses/FOSDEM 2018/</Path>
+                  <Path Filename="FOSDEM 2018">/home/jbenden/Videos/Programming Courses/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Evanescence">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Evanescence/</Path>
+                  <Path Filename="Gary Moore">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Gary Moore/</Path>
+                  <Path Filename="Megadeth">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Megadeth/</Path>
+                  <Path Filename="Tarja Turunen">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Tarja Turunen/</Path>
+                  <Path Filename="Unknown">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Unknown/</Path>
+                  <Path Filename="Caravan Palace">/home/jbenden/Videos/Music Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Music Videos/Caravan Palace/</Path>
+                  <Path Filename="Music Videos">/home/jbenden/Videos/</Path>
+                  <Path Filename="Pictures">/home/jbenden/</Path>
+                  <Path Filename="Screenshots">/home/jbenden/Pictures/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/Screenshots/</Path>
+                  <Path Filename="Wallpapers">/home/jbenden/Pictures/</Path>
+                  <Path Filename="..">/home/jbenden/Pictures/Wallpapers/</Path>
+                  <Path Filename="Documents">/home/jbenden/</Path>
+                  <Path Filename="Fonts">/home/jbenden/Documents/</Path>
+                  <Path Filename="..">/home/jbenden/Documents/Fonts/</Path>
+                  <Path Filename="Downloads">/home/jbenden/</Path>
+                  <Path Filename="Adding_Scheduler_Activations_to_Mach_30.pdf">/home/jbenden/Downloads/</Path>
+                  <Path Filename="Videos">/home/jbenden/</Path>
+                  <Path Filename="Programming Courses">/home/jbenden/Videos/</Path>
+                  <Path Filename="..">/home/jbenden/Videos/Programming Courses/</Path>
+                  <Path Filename="bin">/home/jbenden/</Path>
+                  <Path Filename="clion-2018.2">/home/jbenden/bin/</Path>
+                  <Path Filename="..">/home/jbenden/bin/clion-2018.2/</Path>
+                  <Path Filename="Source">/home/jbenden/</Path>
+                  <Path Filename="gum">/home/jbenden/Source/</Path>
+                  <Path Filename="..">/home/jbenden/Source/gum/</Path>
+                  <Path Filename="us.benden">/home/jbenden/Source/</Path>
+                  <Path Filename="aircrack ng">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="aircrack-ng">/home/jbenden/Source/us.benden/aircrack ng/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/aircrack ng/aircrack-ng/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/aircrack ng/</Path>
+                  <Path Filename="aircrack-ng">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/aircrack-ng/</Path>
+                  <Path Filename="Aircrack_Project">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/Aircrack_Project/</Path>
+                  <Path Filename="us.benden">/home/jbenden/Source/</Path>
+                  <Path Filename="Aircrack_Project">/home/jbenden/Source/us.benden/</Path>
+                  <Path Filename="..">/home/jbenden/Source/us.benden/Aircrack_Project/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Right>
+    </OpenedTabs>
+    <Options>49937</Options>
+    <CharacterLimit>32</CharacterLimit>
+    <Position>0</Position>
+    <ActionOnDoubleClick>2</ActionOnDoubleClick>
+  </Tabs>
+  <MainWindow>
+    <Position>
+      <Left>587</Left>
+      <Top>323</Top>
+      <Width>2666</Width>
+      <Height>1474</Height>
+      <Maximized>False</Maximized>
+      <Splitter>50</Splitter>
+      <PixelsPerInch>96</PixelsPerInch>
+    </Position>
+  </MainWindow>
+  <Language>
+    <POFileName>doublecmd.en.po</POFileName>
+  </Language>
+  <Behaviours>
+    <GoToRoot>False</GoToRoot>
+    <RunInTerminalStayOpenCmd>x-terminal-emulator</RunInTerminalStayOpenCmd>
+    <RunInTerminalStayOpenParams>-e sh -c '{command}; echo -n Press ENTER to exit... ; read a'</RunInTerminalStayOpenParams>
+    <RunInTerminalCloseCmd>x-terminal-emulator</RunInTerminalCloseCmd>
+    <RunInTerminalCloseParams>-e sh -c {command}</RunInTerminalCloseParams>
+    <JustRunTerminal>x-terminal-emulator</JustRunTerminal>
+    <JustRunTermParams/>
+    <OnlyOneAppInstance>False</OnlyOneAppInstance>
+    <LynxLike>True</LynxLike>
+    <FileSizeFormat>0</FileSizeFormat>
+    <FileSizeDigits>1</FileSizeDigits>
+    <MinimizeToTray>False</MinimizeToTray>
+    <AlwaysShowTrayIcon>True</AlwaysShowTrayIcon>
+    <Mouse>
+      <Selection Enabled="True">
+        <Button>0</Button>
+      </Selection>
+      <SingleClickStart>0</SingleClickStart>
+      <ScrollMode>1</ScrollMode>
+      <WheelScrollLines>3</WheelScrollLines>
+    </Mouse>
+    <AutoFillColumns>False</AutoFillColumns>
+    <AutoSizeColumn>1</AutoSizeColumn>
+    <CustomColumnsChangeAllColumns>False</CustomColumnsChangeAllColumns>
+    <BriefViewFileExtAligned>False</BriefViewFileExtAligned>
+    <DateTimeFormat>mm/dd/yyyy hh:nn:ss</DateTimeFormat>
+    <CutTextToColumnWidth>True</CutTextToColumnWidth>
+    <ExtendCellWidth>False</ExtendCellWidth>
+    <ShowSystemFiles>True</ShowSystemFiles>
+    <ListFilesInThread>True</ListFilesInThread>
+    <LoadIconsSeparately>True</LoadIconsSeparately>
+    <DelayLoadingTabs>True</DelayLoadingTabs>
+    <HighlightUpdatedFiles>True</HighlightUpdatedFiles>
+    <DriveBlackList/>
+    <DriveBlackListUnmounted>False</DriveBlackListUnmounted>
+  </Behaviours>
+  <Tools>
+    <Viewer Enabled="False">
+      <Path/>
+      <Parameters/>
+      <RunInTerminal>False</RunInTerminal>
+      <KeepTerminalOpen>False</KeepTerminalOpen>
+    </Viewer>
+    <Editor Enabled="False">
+      <Path/>
+      <Parameters/>
+      <RunInTerminal>False</RunInTerminal>
+      <KeepTerminalOpen>False</KeepTerminalOpen>
+    </Editor>
+    <Differ Enabled="False">
+      <Path/>
+      <Parameters/>
+      <RunInTerminal>False</RunInTerminal>
+      <KeepTerminalOpen>False</KeepTerminalOpen>
+      <FramePosAfterComp>0</FramePosAfterComp>
+    </Differ>
+  </Tools>
+  <Fonts>
+    <Main>
+      <Name>Sans</Name>
+      <Size>19</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Main>
+    <Editor>
+      <Name>Monospace</Name>
+      <Size>14</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Editor>
+    <Viewer>
+      <Name>Monospace</Name>
+      <Size>14</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Viewer>
+    <Log>
+      <Name>Monospace</Name>
+      <Size>12</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Log>
+    <ViewerBook>
+      <Name>default</Name>
+      <Size>16</Size>
+      <Style>1</Style>
+      <Quality>0</Quality>
+    </ViewerBook>
+    <Console>
+      <Name>Monospace</Name>
+      <Size>12</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Console>
+    <OptionsTree>
+      <Name>default</Name>
+      <Size>10</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </OptionsTree>
+    <OptionsMain>
+      <Name>default</Name>
+      <Size>10</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </OptionsMain>
+    <SearchResults>
+      <Name>default</Name>
+      <Size>14</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </SearchResults>
+    <PathEdit>
+      <Name>default</Name>
+      <Size>12</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </PathEdit>
+    <FunctionButtons>
+      <Name>default</Name>
+      <Size>8</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </FunctionButtons>
+  </Fonts>
+  <ToolTips>
+    <ShowToolTipMode>True</ShowToolTipMode>
+    <CustomFields/>
+  </ToolTips>
+  <Layout>
+    <MainMenu>True</MainMenu>
+    <ButtonBar Enabled="True">
+      <FlatIcons>True</FlatIcons>
+      <ButtonHeight>48</ButtonHeight>
+      <IconSize>40</IconSize>
+      <ReportErrorWithCommands>False</ReportErrorWithCommands>
+    </ButtonBar>
+    <DriveBar1>True</DriveBar1>
+    <DriveBar2>True</DriveBar2>
+    <DriveBarFlat>True</DriveBarFlat>
+    <DrivesListButton Enabled="True">
+      <ShowLabel>True</ShowLabel>
+      <ShowFileSystem>True</ShowFileSystem>
+      <ShowFreeSpace>True</ShowFreeSpace>
+    </DrivesListButton>
+    <SeparateTree>False</SeparateTree>
+    <DirectoryTabs>True</DirectoryTabs>
+    <CurrentDirectory>True</CurrentDirectory>
+    <TabHeader>True</TabHeader>
+    <StatusBar>True</StatusBar>
+    <CmdLine>True</CmdLine>
+    <LogWindow>False</LogWindow>
+    <TermWindow>False</TermWindow>
+    <KeyButtons>True</KeyButtons>
+    <InterfaceFlat>True</InterfaceFlat>
+    <DriveFreeSpace>True</DriveFreeSpace>
+    <DriveIndicator>True</DriveIndicator>
+    <ProgressInMenuBar>False</ProgressInMenuBar>
+    <PanelOfOperationsInBackground>True</PanelOfOperationsInBackground>
+    <HorizontalFilePanels>False</HorizontalFilePanels>
+    <ShortFormatDriveInfo>True</ShortFormatDriveInfo>
+  </Layout>
+  <FilesViews>
+    <Sorting>
+      <CaseSensitivity>0</CaseSensitivity>
+      <NaturalSorting>False</NaturalSorting>
+      <SortFolderMode>0</SortFolderMode>
+      <NewFilesPosition>2</NewFilesPosition>
+      <UpdatedFilesPosition>2</UpdatedFilesPosition>
+    </Sorting>
+    <ColumnsView>
+      <AutoSaveWidth>True</AutoSaveWidth>
+      <TitleStyle>1</TitleStyle>
+    </ColumnsView>
+    <BriefView>
+      <FileExtAligned>False</FileExtAligned>
+      <Columns>
+        <FixedWidth>100</FixedWidth>
+        <FixedCount>2</FixedCount>
+        <AutoSize>2</AutoSize>
+      </Columns>
+    </BriefView>
+    <ExtraLineSpan>2</ExtraLineSpan>
+  </FilesViews>
+  <Keyboard>
+    <Typing>
+      <Actions>
+        <NoModifier>2</NoModifier>
+        <Alt>0</Alt>
+        <CtrlAlt>3</CtrlAlt>
+      </Actions>
+    </Typing>
+  </Keyboard>
+  <FileOperations>
+    <BufferSize>524288</BufferSize>
+    <HashBufferSize>8388608</HashBufferSize>
+    <UseMmapInSearch>False</UseMmapInSearch>
+    <PartialNameSearch>True</PartialNameSearch>
+    <WipePassNumber>1</WipePassNumber>
+    <DropReadOnlyFlag>False</DropReadOnlyFlag>
+    <ProcessComments>False</ProcessComments>
+    <RenameSelOnlyName>False</RenameSelOnlyName>
+    <ShowCopyTabSelectPanel>False</ShowCopyTabSelectPanel>
+    <UseTrash>True</UseTrash>
+    <SkipFileOpError>False</SkipFileOpError>
+    <TypeOfDuplicatedRename>0</TypeOfDuplicatedRename>
+    <ShowDialogOnDragDrop>False</ShowDialogOnDragDrop>
+    <DragAndDropTextRichtextDesireLevel>0</DragAndDropTextRichtextDesireLevel>
+    <DragAndDropTextHtmlDesireLevel>1</DragAndDropTextHtmlDesireLevel>
+    <DragAndDropTextUnicodeDesireLevel>2</DragAndDropTextUnicodeDesireLevel>
+    <DragAndDropTextSimpletextDesireLevel>3</DragAndDropTextSimpletextDesireLevel>
+    <DragAndDropAskFormatEachTime>False</DragAndDropAskFormatEachTime>
+    <DragAndDropTextAutoFilename>False</DragAndDropTextAutoFilename>
+    <DragAndDropSaveUnicodeTextInUFT8>True</DragAndDropSaveUnicodeTextInUFT8>
+    <OverwriteFolder>False</OverwriteFolder>
+    <NtfsHourTimeDelay>False</NtfsHourTimeDelay>
+    <SearchDefaultTemplate/>
+    <ProgressKind>0</ProgressKind>
+    <Confirmations>15</Confirmations>
+    <Options>
+      <Symlink>0</Symlink>
+      <CorrectLinks>False</CorrectLinks>
+      <FileExists>0</FileExists>
+      <DirectoryExists>0</DirectoryExists>
+      <SetPropertyError>0</SetPropertyError>
+      <ReserveSpace>False</ReserveSpace>
+      <CheckFreeSpace>True</CheckFreeSpace>
+      <CopyAttributes>True</CopyAttributes>
+      <CopyTime>True</CopyTime>
+      <CopyOwnership>False</CopyOwnership>
+      <CopyPermissions>False</CopyPermissions>
+      <Verify>False</Verify>
+      <ExcludeEmptyTemplateDirectories>True</ExcludeEmptyTemplateDirectories>
+    </Options>
+    <InitiallyClearFileMask>True</InitiallyClearFileMask>
+    <NewSearchClearFiltersAction>0</NewSearchClearFiltersAction>
+    <ShowMenuBarInFindFiles>True</ShowMenuBarInFindFiles>
+    <AutoExtractOpenMask/>
+  </FileOperations>
+  <Log Enabled="False" LogFileWithDateInName="False">
+    <FileName>%DC_CONFIG_PATH%/doublecmd.log</FileName>
+    <Options>1023</Options>
+  </Log>
+  <History>
+    <SearchReplaceHistory Save="True"/>
+    <DirHistory Save="True"/>
+    <CmdLineHistory Save="True"/>
+    <FileMaskHistory Save="True"/>
+  </History>
+  <QuickSearch>
+    <MatchBeginning>True</MatchBeginning>
+    <MatchEnding>True</MatchEnding>
+    <Case>1</Case>
+    <Items>2</Items>
+  </QuickSearch>
+  <QuickFilter>
+    <AutoHide>True</AutoHide>
+    <SaveSessionModifications>False</SaveSessionModifications>
+  </QuickFilter>
+  <Miscellaneous>
+    <GridVertLine>False</GridVertLine>
+    <GridHorzLine>False</GridHorzLine>
+    <ShowWarningMessages>True</ShowWarningMessages>
+    <SpaceMovesDown>False</SpaceMovesDown>
+    <DirBrackets>True</DirBrackets>
+    <InplaceRename>False</InplaceRename>
+    <HotDirAddTargetOrNot>False</HotDirAddTargetOrNot>
+    <HotDirFullExpandOrNot>False</HotDirFullExpandOrNot>
+    <ShowPathInPopup>False</ShowPathInPopup>
+    <ShowOnlyValidEnv>True</ShowOnlyValidEnv>
+    <WhereToAddNewHotDir>2</WhereToAddNewHotDir>
+    <DblClickToParent>False</DblClickToParent>
+  </Miscellaneous>
+  <Thumbnails Save="True">
+    <Width>128</Width>
+    <Height>128</Height>
+  </Thumbnails>
+  <AutoRefresh>
+    <Options>3</Options>
+    <ExcludeDirs/>
+    <Mode>1</Mode>
+  </AutoRefresh>
+  <Icons>
+    <ShowMode>3</ShowMode>
+    <ShowOverlays>False</ShowOverlays>
+    <Size>32</Size>
+    <Exclude>False</Exclude>
+    <ExcludeDirs/>
+    <ShowInMenus Enabled="False">
+      <Size>16</Size>
+    </ShowInMenus>
+    <Theme>dctheme</Theme>
+    <DiskSize>16</DiskSize>
+    <DiskAlpha>50</DiskAlpha>
+    <CustomIcons>0</CustomIcons>
+    <PixelsPerInch>96</PixelsPerInch>
+    <ShowButtonGlyphs>0</ShowButtonGlyphs>
+  </Icons>
+  <IgnoreList Enabled="False">
+    <IgnoreListFile>%DC_CONFIG_PATH%/ignorelist.txt</IgnoreListFile>
+  </IgnoreList>
+  <DirectoryHotList/>
+  <Viewer>
+    <PreviewVisible>False</PreviewVisible>
+    <ImageStretch>False</ImageStretch>
+    <ImageStretchLargeOnly>False</ImageStretchLargeOnly>
+    <ImageCenter>True</ImageCenter>
+    <CopyMovePath1/>
+    <CopyMovePath2/>
+    <CopyMovePath3/>
+    <CopyMovePath4/>
+    <CopyMovePath5/>
+    <PaintMode>Pen</PaintMode>
+    <PaintWidth>5</PaintWidth>
+    <NumberOfColumns>1</NumberOfColumns>
+    <ViewerMode>1</ViewerMode>
+    <PaintColor>255</PaintColor>
+    <BackgroundColor>0</BackgroundColor>
+    <FontColor>16777215</FontColor>
+    <TextPosition>2169</TextPosition>
+    <ImageExifRotate>True</ImageExifRotate>
+  </Viewer>
+  <Editor>
+    <SynEditOptions>856075</SynEditOptions>
+    <EditWaitTime>2000</EditWaitTime>
+  </Editor>
+  <SyncDirs>
+    <Subdirs>False</Subdirs>
+    <ByContent>False</ByContent>
+    <IgnoreDate>False</IgnoreDate>
+    <FilterCopyRight>True</FilterCopyRight>
+    <FilterEqual>True</FilterEqual>
+    <FilterNotEqual>True</FilterNotEqual>
+    <FilterCopyLeft>True</FilterCopyLeft>
+    <FilterDuplicates>True</FilterDuplicates>
+    <FilterSingles>True</FilterSingles>
+    <FileMask>*</FileMask>
+  </SyncDirs>
+  <InternalAssociations>
+    <OfferToAddNewFileType>False</OfferToAddNewFileType>
+    <LastCustomAction>Custom action</LastCustomAction>
+    <ExpandedContextMenu>False</ExpandedContextMenu>
+    <ExecuteViaShell>False</ExecuteViaShell>
+    <OpenSystemWithTerminalClose>False</OpenSystemWithTerminalClose>
+    <OpenSystemWithTerminalStayOpen>False</OpenSystemWithTerminalStayOpen>
+    <IncludeFileAssociation>False</IncludeFileAssociation>
+  </InternalAssociations>
+  <FavoriteTabsOptions>
+    <FavoriteTabsUseRestoreExtraOptions>False</FavoriteTabsUseRestoreExtraOptions>
+    <WhereToAdd>1</WhereToAdd>
+    <Expand>True</Expand>
+    <GotoConfigAftSav>False</GotoConfigAftSav>
+    <GotoConfigAftReSav>False</GotoConfigAftReSav>
+    <DfltLeftGoTo>0</DfltLeftGoTo>
+    <DfltRightGoTo>1</DfltRightGoTo>
+    <DfltKeep>5</DfltKeep>
+    <DfltSaveDirHistory>False</DfltSaveDirHistory>
+    <FavTabsLastUniqueID>{FEB95350-F8D5-4C77-AAD6-957374EA16C0}</FavTabsLastUniqueID>
+  </FavoriteTabsOptions>
+  <Lua>
+    <PathToLibrary>liblua5.1.so.0</PathToLibrary>
+  </Lua>
+  <NameShortcutFile>shortcuts.scf</NameShortcutFile>
+  <LastUsedPacker>xz</LastUsedPacker>
+  <UseShellForFileOperations>False</UseShellForFileOperations>
+  <LastDoAnyCommand>cm_Refresh</LastDoAnyCommand>
+  <SearchTemplates/>
+  <ColumnsSets DefaultTitleHash="540805403">
+    <ColumnsSet UseFrameCursor="False">
+      <Name>Default</Name>
+      <CustomView>False</CustomView>
+      <PixelsPerInch>96</PixelsPerInch>
+      <CursorBorder Enabled="False">
+        <Color>0</Color>
+      </CursorBorder>
+      <Columns>
+        <Column>
+          <Title>Name</Title>
+          <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
+          <Width>668</Width>
+          <Align>0</Align>
+          <Font>
+            <Name>Sans</Name>
+            <Size>16</Size>
+            <Style>0</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>128</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>128</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Ext</Title>
+          <FuncString>[DC().GETFILEEXT{}]</FuncString>
+          <Width>102</Width>
+          <Align>0</Align>
+          <Font>
+            <Name>Sans</Name>
+            <Size>16</Size>
+            <Style>0</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>128</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>128</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Size</Title>
+          <FuncString>[DC().GETFILESIZE{}]</FuncString>
+          <Width>231</Width>
+          <Align>1</Align>
+          <Font>
+            <Name>Sans</Name>
+            <Size>16</Size>
+            <Style>0</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>128</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>128</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Date</Title>
+          <FuncString>[DC().GETFILETIME{}]</FuncString>
+          <Width>201</Width>
+          <Align>1</Align>
+          <Font>
+            <Name>Sans</Name>
+            <Size>16</Size>
+            <Style>0</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>128</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>128</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Attr</Title>
+          <FuncString>[DC().GETFILEATTR{}]</FuncString>
+          <Width>100</Width>
+          <Align>0</Align>
+          <Font>
+            <Name>Sans</Name>
+            <Size>16</Size>
+            <Style>0</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>128</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>128</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+      </Columns>
+    </ColumnsSet>
+  </ColumnsSets>
+  <Description>
+    <CreateNewUnicode>True</CreateNewUnicode>
+    <DefaultEncoding>2</DefaultEncoding>
+    <CreateNewEncoding>3</CreateNewEncoding>
+  </Description>
+  <TreeViewMenu>
+    <UseTVMDirectoryHotlistFMC>False</UseTVMDirectoryHotlistFMC>
+    <UseTVMDirectoryHotlistFDC>False</UseTVMDirectoryHotlistFDC>
+    <UseTVMFavoriteTabsFMC>False</UseTVMFavoriteTabsFMC>
+    <UseTVMFavoriteTabsFDC>False</UseTVMFavoriteTabsFDC>
+    <UseTVMDirHistory>False</UseTVMDirHistory>
+    <UseTVMViewHistory>False</UseTVMViewHistory>
+    <UseTVMCommandLineHistory>False</UseTVMCommandLineHistory>
+    <TreeViewMenuShortcutExit>True</TreeViewMenuShortcutExit>
+    <TreeViewMenuSingleClickExit>True</TreeViewMenuSingleClickExit>
+    <TreeViewMenuDoubleClickExit>True</TreeViewMenuDoubleClickExit>
+    <Context00>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context00>
+    <Context01>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context01>
+    <Context02>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context02>
+    <Context03>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context03>
+    <Context04>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context04>
+    <Context05>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context05>
+    <Context06>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context06>
+    <TreeViewMenuUseKeyboardShortcut>True</TreeViewMenuUseKeyboardShortcut>
+    <BackgroundColor>-2147483617</BackgroundColor>
+    <ShortcutColor>255</ShortcutColor>
+    <NormalTextColor>-2147483640</NormalTextColor>
+    <SecondaryTextColor>-2147483642</SecondaryTextColor>
+    <FoundTextColor>-2147483635</FoundTextColor>
+    <UnselectableTextColor>-2147483631</UnselectableTextColor>
+    <CursorColor>-2147483635</CursorColor>
+    <ShortcutUnderCursor>-2147483634</ShortcutUnderCursor>
+    <NormalTextUnderCursor>-2147483634</NormalTextUnderCursor>
+    <SecondaryTextUnderCursor>-2147483628</SecondaryTextUnderCursor>
+    <FoundTextUnderCursor>65535</FoundTextUnderCursor>
+    <UnselectableUnderCursor>-2147483631</UnselectableUnderCursor>
+  </TreeViewMenu>
+  <HotKeySortOrder>0</HotKeySortOrder>
+  <UseEnterToCloseHotKeyEditor>True</UseEnterToCloseHotKeyEditor>
+  <MarkMaskCaseSensitive>False</MarkMaskCaseSensitive>
+  <MarkMaskIgnoreAccents>False</MarkMaskIgnoreAccents>
+  <MarkMaskFilterWindows>False</MarkMaskFilterWindows>
+  <MarkShowWantedAttribute>False</MarkShowWantedAttribute>
+  <MarkDefaultWantedAttribute/>
+  <MarkLastWantedAttribute/>
+</doublecmd>

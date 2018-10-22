@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#######################################################################
+# tux-rcedit: Securely edit tux configuration
+# (C) 2017 Joseph Benden <joe@benden.us>
+#######################################################################
+
+set -euf
+
+function cleanup()
+{
+	rm -f /dev/shm/.tuxtoolsrc /dev/shm/.tuxtoolsrc.gpg
+}
+trap "cleanup" EXIT
+
+# be slightly more secure
+umask 022
+
+echo "I: decrypting to RAM..."
+/usr/bin/gpg2 -d ~/.tuxtoolsrc.gpg > /dev/shm/.tuxtoolsrc
+
+echo "I: launching editor..."
+${EDITOR} /dev/shm/.tuxtoolsrc
+
+echo "I: encrypting from RAM..."
+/usr/bin/gpg2 -r 2C5879C2 -e /dev/shm/.tuxtoolsrc
+
+echo "I: installing..."
+cp -p /dev/shm/.tuxtoolsrc.gpg ~/.tuxtoolsrc.gpg
+
+echo "I: Complete!"
+exit 0
+

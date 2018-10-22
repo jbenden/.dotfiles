@@ -1,0 +1,114 @@
+##################
+# config section #
+##################
+
+export EDITOR=/usr/bin/vim
+export SCRIPT_DIR=$HOME/bin
+export PATH="$PATH:$HOME/bin:$HOME/Source/FlexeLint_Workstation/flexelint8/src"
+export PASSIVE_FTP=1
+export INPUTRC=$HOME/.inputrc
+export PAGER=/usr/bin/less
+
+# adjust command-line history settings.
+HISTFILE=$HOME/.zsh_history
+SAVEHIST=10000
+HISTSIZE=10000
+
+# colored man pages
+export LESS_TERMCAP_mb=$(tput bold; tput setaf 2) # green
+export LESS_TERMCAP_md=$(tput bold; tput setaf 2) # cyan
+export LESS_TERMCAP_me=$(tput sgr0)
+export LESS_TERMCAP_so=$(tput bold; tput setaf 3; tput setab 4) # yellow on blue
+export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
+export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 7) # white
+export LESS_TERMCAP_ue=$(tput rmul; tput sgr0)
+export LESS_TERMCAP_mr=$(tput rev)
+export LESS_TERMCAP_mh=$(tput dim)
+export LESS_TERMCAP_ZN=$(tput ssubm)
+export LESS_TERMCAP_ZV=$(tput rsubm)
+export LESS_TERMCAP_ZO=$(tput ssupm)
+export LESS_TERMCAP_ZW=$(tput rsupm)
+export GROFF_NO_SGR=1
+
+# Load wal color theme for every terminal.
+cat ~/.cache/wal/sequences
+
+# Pre-load our identity.
+    [ -e /usr/bin/keychain ] && /usr/bin/keychain --agents gpg,ssh hcbsd-01_ecdsa github-jbenden-ecdsa gcc-compile-farm gitlab-jbenden-ed25519 jbenden_gitolite 2C5879C2
+    [ -z "$HOSTNAME" ] && HOSTNAME=`uname -n`
+    [ -f $HOME/.keychain/$HOSTNAME-sh ] && \
+        . $HOME/.keychain/$HOSTNAME-sh
+    [ -f $HOME/.keychain/$HOSTNAME-sh-gpg ] && \
+        . $HOME/.keychain/$HOSTNAME-sh-gpg
+
+# ICC support
+if [ -d "/opt/intel/lib/intel64" ]; then
+	export LD_LIBRARY_PATH="/opt/intel/lib/intel64${LD_LIBRARY_PATH:+:}${LD_LIBRARY_PATH:-}"
+fi
+
+# added by travis gem
+[ -f /home/jbenden/.travis/travis.sh ] && source /home/jbenden/.travis/travis.sh
+
+# export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# URL encode something and print it.
+function url-encode; {
+    setopt extendedglob
+    echo "${${(j: :)@}//(#b)(?)/%$[[##16]##${match[1]}]}"
+}
+
+# Search google for the given keywords.
+function google; {
+    elinks "http://www.google.com/search?q=`url-encode "${(j: :)@}"`"
+}
+
+# Short-cut for create directory and cd into.
+function take() {
+	mkdir $1 && cd $1
+}
+
+# Source $HOME/.config/zsh/zsh_aliases
+source $HOME/.config/zsh/zsh_aliases
+source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+case "$(uname -s)" in
+	Darwin)
+		CPUS=`sysctl -a | grep machdep.cpu.cores_per_package | awk '{ print $2 }'`
+		;;
+	*BSD)
+		CPUS=`sysctl -n hw.ncpu`
+		export TOP="-P"
+		alias ls="ls -F"
+		alias ll="ls -Fl"
+		alias lla="ls -Fal"
+		alias ps='ps -A -o "jail, user, pid, ppid, tty, pmem, vsz, rss, stime, comm"'
+		alias mpv="mpv --vo=vaapi --hwdec=vaapi"
+		alias dig="drill"
+		alias hex='od -t x1'
+		;;
+	Linux)
+		CPUS=`nproc`
+		alias pscgroup='ps wwHaexo pid,ppid,user,cgroup:160,comm,command --width 9000 | less -S'
+		alias lint='/home/jbenden/bin/flexelint/src/flexelint /home/jbenden/bin/flexelint/src/std.lnt'
+		alias mpv="mpv --vo=vdpau --hwdec=vdpau"
+		alias vfide="vfide -prover z3v4.5"
+		alias verifast="verifast -prover z3v4.5"
+		alias hex='od -t x1'
+		alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+		alias acbuild="make clean || : && autoreconf -vi && ./configure --with-experimental && make && make check"
+		alias docker-compose="env TMP=/home/jbenden/tmp docker-compose"
+		;;
+esac
+
+NJOBS=$(($CPUS * 2))
+alias make="make -j$NJOBS"
+
+alias ac="cd ~/Source/us.benden/aircrack-ng-git"
+alias aci="cd ~/Source/us.benden/aircrack-ng-infra"
+
+#if [[ "$(uname)" == "Linux" ]]; then
+#	if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+#	  exec startx
+#	fi
+#fi

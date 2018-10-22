@@ -1,0 +1,47 @@
+#!/bin/bash
+
+set -euf
+
+YTID="${1##https://www.youtube.com/watch?v=}"
+YTNAME=""
+
+# --get-filename --skip-download --quiet
+
+echo "I: Beginning download of audio for video ID ${YTID}..."
+
+set +e
+~/bin/youtube-dl --quiet '-f' 'bestaudio[asr>44100]' --restrict-filenames --write-annotations --add-metadata '-o' '%(title)s.f%(format_id)s.%(ext)s' -- "${YTID}" 2>/dev/null
+_rc=$?
+set -e
+
+if [ $_rc -ne 0 ];
+then
+    _rc=$?
+    set +e
+    ~/bin/youtube-dl --quiet '-f' 'bestaudio' --restrict-filenames --write-annotations --add-metadata '-o' '%(title)s.f%(format_id)s.%(ext)s' -- "${YTID}" 2>/dev/null
+    _rc=$?
+    set -e
+
+    if [ $_rc -ne 0 ];
+    then
+        echo "E: could not download the requested video, bailing..."
+        exit 2
+    else
+        YTNAME=$(~/bin/youtube-dl '-f' 'bestaudio' --restrict-filenames --write-annotations --add-metadata --get-filename --skip-download --quiet '-o' '%(title)s.f%(format_id)s.%(ext)s' -- "${YTID}")
+    fi
+else
+    YTNAME=$(~/bin/youtube-dl '-f' 'bestaudio[asr>44100]' --restrict-filenames --write-annotations --add-metadata --get-filename --skip-download --quiet '-o' '%(title)s.f%(format_id)s.%(ext)s' -- "${YTID}")
+fi
+
+echo "I: Downloaded to ${YTNAME}"
+
+echo "I: Converting to FLAC"
+ffmpeg -v 0 -y -threads 4 -i "${YTNAME}" -ac 2 "${YTNAME%.*}.flac"
+
+echo "I: Creating Audacity labels for FLAC"
+silan -f audacity "${YTNAME%.*}.flac" > "${YTNAME%.*}.audacity.txt"
+NOSONGS=$(wc -l "${YTNAME%.*}.audacity.txt" | awk '{ print $1 }')
+echo "I: Found ${NOSONGS} songs inside of audio."
+
+exit 0
+

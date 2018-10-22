@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+# Last.fm YouTube Video ID Scraper
+# (C) 2017 Joseph Benden <joe@benden.us>
+#
+# Pass a URL to scrape to this script and all YouTube
+# video identifiers are output to STDOUT.
+#
+# Feed the output of this script to one such as youtube-dl
+# to acquire them!
+
+set -euf
+
+if [ $# -lt 1 ]; then
+    echo "E: Must supply a Last.fm URL to scrape."
+    exit 1
+fi
+
+curl -sRL "$1" | \
+xmllint --html --xpath '//div[@id="player-playlist"]//li[@data-video-id]/@data-video-id' - 2>/dev/null | \
+tr ' ' '\n' | \
+sed -e '/^$/d' -e 's/^data-video-id="//g' -e 's/"$//g'
+
+exit 0

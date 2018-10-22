@@ -1,0 +1,118 @@
+#################
+# alias section #
+#################
+
+# Linux and macOS related aliases.
+
+alias g="git status"
+alias more="bat"
+alias less="bat"
+
+# Open and edit ToDo list.
+alias todo="vim $HOME/Documents/personal/notes/todo.md"
+
+# Net
+alias serv="python -m SimpleHTTPServer"
+alias wanip="curl -s http://whatismijnip.nl |cut -d' ' -f 5"
+
+# Useful
+alias dev="ls /dev/"
+alias pingit="ping -c3 www.google.com"
+alias weather="curl -H \"Accept-Language: de\" wttr.in/Berlin"
+alias glc="gloga | head -1 | cut -d ' ' -f2"
+alias tm="tmux a || tmux"
+
+# Creating license file containing unlicense.
+alias unli="curl http://unlicense.org/UNLICENSE > LICENSE"
+
+# Functions
+
+# Change to journal dir and create new journal.
+function mj() {
+    journal_dir="$HOME/Documents/personal/notes/journal" 
+    if [ ! "$PWD" = "$journal_dir" ]; then
+        cd $journal_dir
+    fi
+    cp dummy $(date "+%Y-%m-%d").yaml
+    vim $(date "+%Y-%m-%d").yaml
+    git add .
+}
+
+# Create and edit executeable python file.
+pytest() {
+	echo "#!/usr/bin/env python" > ./test.py
+	vim ./test.py
+	chmod 0700 ./test.py
+}
+
+# Create and edit executeable bash file.
+tsh() {
+	echo "#!/bin/bash" > ./test.sh
+	vim ./test.sh
+	chmod 0700 ./test.sh
+}
+
+# Create README for project.
+mkread(){
+	[[ -f README.md ]] && rm README.md
+	touch README.md
+	echo "# $(pwd | rev | cut -d'/' -f1 | rev)\n" >> README.md
+	echo "Please insert simple description."
+	read desc
+	echo -e "> ${desc}\n" >> README.md
+	echo -e "## Requirements\n" >> README.md
+	echo -e "## Build\n" >> README.md
+	echo -e "## Install" >> README.md
+	echo -e "## Run\n" >> README.md
+
+}
+
+# Create new project.
+mkpro(){
+	[[ $# -ne 1 ]] && echo "Please provide name of project as argument.\nExiting." && return 1
+	take $1
+	unli
+	mkread
+	echo "Hey! Cool, you started another project\nPlease insert the name of the first file\n=>"
+	read name
+	touch $name
+}
+
+
+# only linux related aliases
+if [[ "$(uname)" == "Linux" ]]; then
+
+	# Configure my system.
+	alias reload="source $HOME/.zshrc && echo 'Successfully reloaded zsh_config_files'"
+
+	# Power commands.
+	alias reboot="sudo reboot"
+	alias poweroff="sudo poweroff"
+
+	# Change monitor settings.
+	changemon() {
+		PS3="What setup would you like to run?"
+		select choice in "Internal monitor" "External monitor" "Both"; do
+			case $choice in
+				"Internal monitor" )
+					xrandr --output LVDS0 --auto --output DP3 --off && sh $HOME/.fehbg && $SCRIPT_DIR/polybar.sh bottom
+					return 0
+					;;
+				"External monitor" )
+					xrandr --output DP3 --auto --output LVDS0 --off && $HOME/.fehbg && $SCRIPT_DIR/polybar.sh bottom
+					return 0
+					;;
+				"Both" )
+					xrandr --output DP3 --auto --primary --output LVDS0 --auto --noprimary --right-of DP3 && $HOME/.fehbg && $SCRIPT_DIR/polybar.sh bottom
+					return 0
+					;;
+				*)
+					echo "Wrong input."
+					;;
+			esac
+		done
+	}
+fi
+
+if [[ "$(uname)" == "Darwin" ]]; then
+fi
