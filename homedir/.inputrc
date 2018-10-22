@@ -1,0 +1,58 @@
+# "\e[1~": beginning-of-line
+# "\e[4~": end-of-line
+"\e[5~": beginning-of-history
+"\e[6~": end-of-history
+"\e[3~": delete-char
+"\C-h": backward-delete-char
+# "\e[H": beginning-of-line
+# "\e[F": end-of-line
+control-p: history-search-backward
+control-n: history-search-forward
+
+##
+# Mac bindings
+#
+# <C-S-leftarrow> <C-S-rightarrow> will move backward and forward a word. This
+#     is the same as <Esc-b> & <Esc-f> normally.
+#"\e[1;6D": backward-word
+#"\e[1;6C": forward-word
+#
+# <C-larrow> & <C-rarrow>
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
+
+$if Zsh
+set show-all-if-ambiguous on
+set enable-stats on
+$endif
+
+$if Bash
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set visible-stats on
+set enable-keypad on
+set mark-directories on
+set bell-style none
+set editing-mode emacs
+set completion-query-items 300
+set expand-tilde on
+
+# perform alias expansions
+"\C-xa": alias-expand-line
+
+# quote the current or previous word
+"\C-xq": "\eb\"\ef\""
+
+# edit the path
+"\C-xp": "PATH=${PATH}\e\C-e\C-a\ef\C-f"
+
+# if you are typing a command in bash and you hit
+# arrow up, it'll find the things in your history
+# that match what you've typed so far. -- Kevin McConnell
+#
+# Taken from: http://github.com/trey/dotfiles
+#
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+$endif

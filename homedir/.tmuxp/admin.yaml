@@ -1,0 +1,22 @@
+session_name: sysadmin
+windows:
+  - window_name: infra
+    shell_command_before:
+      - cd ~/Source/us.benden/aircrack-ng-infra
+    panes:
+      - clear
+  - window_name: wrkstn
+    shell_command_before:
+      - cd ~/Source/us.benden/aircrack-ng-infra
+    panes:
+      - sudo -s
+  - window_name: tp-www-000
+    shell_command_before:
+      - cd ~/Source/us.benden/aircrack-ng-infra
+    panes:
+      - ssh tp-www-000
+  - window_name: other
+    shell_command_before:
+      - cd ~/Source/us.benden/aircrack-ng-infra
+    panes:
+      - clear

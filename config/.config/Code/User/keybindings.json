@@ -1,0 +1,26 @@
+[
+    {
+        "key": "ctrl+shift+t",
+        "command": "go.test.package"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "python.runtests"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.tasks.test"
+    }
+]

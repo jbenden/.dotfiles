@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# vim: set ts=2 sw=2 expandtab :
+
+GPG_KEYID=2C5879C2
+NOTIFY_EMAIL=joe@benden.us
+
+# Local Variables:
+# mode: shell-script
+# indent-tabs-mode: nil
+# sh-basic-offset: 2
+# sh-indentation: 2
+# End:
+

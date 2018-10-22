@@ -1,0 +1,3 @@
+COMPONENTS="main universe multiverse restricted"
+APTCACHEHARDLINK=no
+OTHERMIRROR="deb http://ppa.launchpad.net/jbenden/verifast/ubuntu xenial main"

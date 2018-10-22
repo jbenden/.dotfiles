@@ -1,0 +1,17 @@
+session_name: aircrack
+windows:
+  - window_name: devel
+    shell_command_before:
+      - cd ~/Source/us.benden/aircrack-ng-git
+    panes:
+      - clear
+  #- window_name: compile
+    #shell_command_before:
+    #  - cd ~/Source/us.benden/aircrack-ng-git
+    #panes:
+    #  - find src -name "*.c" -o -name "*.h" -o -name "*.cpp" | entr sh -c 'make check'
+  - window_name: infra
+    shell_command_before:
+      - cd ~/Source/us.benden/aircrack-ng-infra
+    panes:
+      - clear

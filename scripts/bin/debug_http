@@ -1,0 +1,6 @@
+#!/bin/bash
+
+debug_http () { /usr/bin/curl --silent $@ -o /dev/null -w "name lookup: %{time_namelookup}\nconnect: %{time_connect}\npretransfer: %{time_pretransfer}\nstarttransfer: %{time_starttransfer}\ntotal: %{time_total}\nsize_download: %{size_download}\nsize_header: %{size_header}\nsize_request: %{size_request}\nspeed_download: %{speed_download}\n" ; }
+
+debug_http $@
+
