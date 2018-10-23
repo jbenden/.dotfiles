@@ -17,7 +17,7 @@ This script will clone this repo, [zsh-syntax-highlighting](https://github.com/z
 
 ```bash
 $ cd $HOME
-$ git clone https://github.com/jbenden/dotfiles .dotfiles
+$ git clone https://github.com/jbenden/.dotfiles .dotfiles
 $ cd .dotfiles
 $ ./install.sh
 ```
