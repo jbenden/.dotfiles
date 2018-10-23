@@ -360,7 +360,7 @@ exec --no-startup-id compton -b &
 # top bar
 exec_always --no-startup-id bash $HOME/.config/polybar/polybar.sh example
 # notification daemon
-exec_always --no-startup-id dunst -lb "$bg" -nb "$bg" -cb "$bg" -lf "$fg" -bf "fg" -cf "$fg" -nf "$fg" -fn "ypn envypn 12" -s -lto 3 -nto 5 -cto 0
+exec_always --no-startup-id dunst -lb "$black" -nb "$black" -cb "$black" -lf "$darkred" -bf "$darkred" -cf "$darkred" -nf "$darkred" -fn "ypn envypn 12" -s -lto 3 -nto 5 -cto 0
 #exec --no-startup-id dunst &
 exec --no-startup-id conky -d
 # handle screensaver
