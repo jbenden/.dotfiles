@@ -41,6 +41,9 @@ cat ~/.cache/wal/sequences
     [ -f $HOME/.keychain/$HOSTNAME-sh-gpg ] && \
         . $HOME/.keychain/$HOSTNAME-sh-gpg
 
+# Output machine information.
+[ -x /usr/bin/neofetch ] && /usr/bin/neofetch
+
 # ICC support
 if [ -d "/opt/intel/lib/intel64" ]; then
 	export LD_LIBRARY_PATH="/opt/intel/lib/intel64${LD_LIBRARY_PATH:+:}${LD_LIBRARY_PATH:-}"
