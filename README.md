@@ -22,6 +22,9 @@ $ cd .dotfiles
 $ ./install.sh
 ```
 
+The wallpaper in use above is [kate-hazen-mort1mer.png](https://github.com/pop-os/wallpapers/blob/master/original/kate-hazen-mort1mer.png)
+from the Pop-OS wallpapers project.
+
 ### Requirements
 
 - git
