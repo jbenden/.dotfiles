@@ -5,6 +5,7 @@
 # Linux and macOS related aliases.
 
 alias g="git status"
+alias gx="git log --pretty=oneline --graph --all --abbrev-commit" # GitX style on the command line
 alias more="bat"
 alias less="bat"
 
