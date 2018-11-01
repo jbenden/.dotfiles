@@ -42,7 +42,7 @@ cat ~/.cache/wal/sequences
         . $HOME/.keychain/$HOSTNAME-sh-gpg
 
 # Output machine information.
-[ -x /usr/bin/neofetch ] && /usr/bin/neofetch
+[ -x /usr/bin/neofetch ] && echo && /usr/bin/neofetch
 
 # Lmod support
 [ -e /etc/profile.d/z00_lmod.zsh ] && source /etc/profile.d/z00_lmod.zsh
