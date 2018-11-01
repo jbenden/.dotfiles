@@ -33,14 +33,6 @@ export GROFF_NO_SGR=1
 # Load wal color theme for every terminal.
 cat ~/.cache/wal/sequences
 
-# Pre-load our identity.
-    [ -e /usr/bin/keychain ] && /usr/bin/keychain --agents gpg,ssh hcbsd-01_ecdsa github-jbenden-ecdsa gcc-compile-farm gitlab-jbenden-ed25519 jbenden_gitolite 2C5879C2
-    [ -z "$HOSTNAME" ] && HOSTNAME=`uname -n`
-    [ -f $HOME/.keychain/$HOSTNAME-sh ] && \
-        . $HOME/.keychain/$HOSTNAME-sh
-    [ -f $HOME/.keychain/$HOSTNAME-sh-gpg ] && \
-        . $HOME/.keychain/$HOSTNAME-sh-gpg
-
 # Output machine information.
 [ -x /usr/bin/neofetch ] && echo && /usr/bin/neofetch
 
