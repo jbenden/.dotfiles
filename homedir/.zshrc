@@ -47,11 +47,18 @@ ZSH_THEME="wezm"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Settings for Keychain tool
+zstyle :omz:plugins:keychain agents gpg,ssh
+zstyle :omz:plugins:keychain identities hcbsd-01_ecdsa \
+    github-jbenden-ecdsa gcc-compile-farm gitlab-jbenden-ed25519 \
+    jbenden_gitolite 2C5879C2
+zstyle :omz:plugins:keychain options --quiet
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(clipboard git gpg-agent vi-mode sudo)
+plugins=(clipboard git gpg-agent keychain vi-mode sudo)
 ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
