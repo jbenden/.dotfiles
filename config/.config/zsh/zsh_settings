@@ -9,6 +9,9 @@ export PASSIVE_FTP=1
 export INPUTRC=$HOME/.inputrc
 export PAGER=/usr/bin/less
 
+# wish for Emacs key-bindings
+bindkey -e
+
 # adjust command-line history settings.
 HISTFILE=$HOME/.zsh_history
 SAVEHIST=10000
