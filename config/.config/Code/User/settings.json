@@ -1,7 +1,6 @@
 {
     "terminal.integrated.fontFamily": "'Dank Code'",
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "'Dank Code'",
+    "editor.fontFamily": "Fira Code",
     "editor.fontWeight": "100",
     "terminal.integrated.scrollback": 100000,
     "files.associations": {
@@ -75,5 +74,7 @@
     "editor.stablePeek": true,
     "editor.smoothScrolling": true,
     "workbench.statusBar.feedback.visible": false,
-    "window.restoreFullscreen": true
+    "window.restoreFullscreen": true,
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true
 }
