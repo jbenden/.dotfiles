@@ -22,7 +22,7 @@ function ondone()
 trap "ondone \$?" EXIT
 
 echo "I: Looking for kernel upgrade..."
-if env DEBIAN_FRONTEND=noninteractive apt list -q --upgradable | grep -qE '^(linux-|intel-|grub-|fwupdate-|fwupd|firmware-|efibootmgr|amd64-microcode)'; then
+if env DEBIAN_FRONTEND=noninteractive apt list -q --upgradable | grep -qE '^(linux-|intel-|grub-|fwupdate-|fwupd|firmware-|efibootmgr|amd64-microcode|initramfs-)'; then
 	CNT=$(find /boot -name 'vmlinuz-*' 2>/dev/null | sort -V | wc -l)
 
 	if [ $CNT -ge 2 ]; then
