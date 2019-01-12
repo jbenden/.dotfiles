@@ -248,8 +248,8 @@ for_window [class="^.*"] border pixel 2
 smart_borders on
 
 # Set inner/outer gaps
-gaps inner 14
-gaps outer -2
+gaps inner 10
+gaps outer 14
 
 # Gaps mode
 set $mode_gaps Gaps: (o) outer, (i) inner
