@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Starting Docker Container with /usr/src mapped to working directory..."
+exec docker run -it -v `pwd`:/usr/src zardus/ctf-tools
