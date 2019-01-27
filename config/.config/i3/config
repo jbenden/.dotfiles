@@ -375,5 +375,7 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id udisksctl mount -b /dev/sda1
 # start the ProtonMail bridge application
 exec --no-startup-id /usr/bin/Desktop-Bridge &
+# start the JetBrains Toolbox
+exec --no-startup-id /home/jbenden/bin/jetbrains-toolbox-1.13.4733/jetbrains-toolbox &
 # top bar
 exec_always --no-startup-id bash $HOME/.config/polybar/polybar.sh example
