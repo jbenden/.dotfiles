@@ -1,4 +1,4 @@
-*.font: xft:Hack:antialias=true:hinting=true:style=Regular:size=12
+*.font: Hack:antialias=true:hinting=true:style=Regular:size=12
 
 Emacs.font: Courier-14
 
@@ -10,14 +10,14 @@ Xft.autohint: false
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
-URxvt.font: xft:Monoid:antialias=true:hinting=true:style=Regular:size=10
-URxvt*termName:                 rxvt-256color
-URxvt.depth:                    32
-URxvt.scrollBar:                false
-URxvt.iso14755:                 false
-URxvt.iso14755_52:              false
-URxvt.saveLines:                100000
-URxvt*background:               rgba:0000/0000/0000/d000
+!URxvt.font: xft:Monoid:antialias=true:hinting=true:style=Regular:size=10
+!URxvt*termName:                 rxvt-256color
+!URxvt.depth:                    32
+!URxvt.scrollBar:                false
+!URxvt.iso14755:                 false
+!URxvt.iso14755_52:              false
+!URxvt.saveLines:                100000
+!URxvt*background:               rgba:0000/0000/0000/d000
 
 ! rofi
 rofi.modi: run
@@ -63,3 +63,5 @@ rofi.fuzzy: false
 ! LightGrey + White
 *color7:  #a89984
 *color15: #ebdbb2
+
+*.alpha: 150
