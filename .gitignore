@@ -1,2 +1,3 @@
 /scripts/bin/__pycache__/**/*
 /config/.config/filezilla/**/*
+/homedir/.gitconfig
