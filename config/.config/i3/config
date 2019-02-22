@@ -72,6 +72,7 @@ floating_modifier $mod
 # bindsym $mod+Return exec i3-sensible-terminal
 # bindsym $mod+Return exec urxvt
 bindsym $mod+Return exec termite
+bindsym $mod+Shift+Return exec /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st
 bindsym $mod+Ctrl+q exec --no-startup-id $HOME/bin/locks.sh
 
 # kill focused window
