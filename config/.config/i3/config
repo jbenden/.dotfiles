@@ -322,6 +322,7 @@ for_window [class="(?i)blueman"] floating enable
 for_window [class="(?i)hexchat"] floating enable
 for_window [class="(?i)pinentry"] floating enable
 for_window [class="(?i)mpv"] floating enable
+for_window [class="(?i)JetBrains Toolbox"] floating enable
 for_window [class="(?i)nm-connection-editor"] floating enable
 
 #for_window [instance="sun-awt-X11-XFramePeer"] floating enable
