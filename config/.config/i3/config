@@ -47,7 +47,7 @@ workspace $ws10 gaps inner 0
 workspace $ws10 gaps outer 0
 
 #                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
-client.focused          $black      $black      $darkwhite  $darkblack  $darkblack
+client.focused          $black      $black      $darkwhite  $darkblack  $darkred
 client.unfocused        $black      $black      $white      $darkblack  $darkblack
 client.focused_inactive $black      $black      $white      $darkblack  $darkblack
 client.urgent           $darkred    $darkred    $black      $darkred    $darkred
