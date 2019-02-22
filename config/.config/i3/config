@@ -184,6 +184,7 @@ bindsym $mod+Shift+v split v; exec localc /home/jbenden/Documents/Personal/Medic
 
 # open file manager
 bindsym $mod+n exec --no-startup-id doublecmd
+bindsym $mod+Shift+n exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
