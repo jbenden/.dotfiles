@@ -1,3 +1,6 @@
 /scripts/bin/__pycache__/**/*
 /config/.config/filezilla/**/*
+/config/.config/Clementine/**/*
+/config/.config/Code Industry/**/*
+/config/.config/Code/**/*
 /homedir/.gitconfig
