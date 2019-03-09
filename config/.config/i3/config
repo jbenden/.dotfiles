@@ -228,6 +228,8 @@ mode "resize" {
 # %%hotkey: Enter resizing mode %%
 bindsym $mod+r mode "resize"
 
+bindsym $mod+F1 exec --no-startup-id $HOME/bin/dmenu_hotkeys.py i3
+
 # Pulse Audio controls
 # bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
 # bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
