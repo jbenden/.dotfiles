@@ -73,6 +73,8 @@ floating_modifier $mod
 # bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec termite
 bindsym $mod+Return exec /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st
+
+# lock terminal
 bindsym $mod+Ctrl+q exec --no-startup-id $HOME/bin/locks.sh
 
 # kill focused window
@@ -113,21 +115,23 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
-# enter fullscreen mode for the focused container
+# %%hotkey: Toggle fullscreen %%
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
+# %%hotkey: Switch container to stacking layout %%
 bindsym $mod+s layout stacking
+# %%hotkey: Switch container to tabbed layout %%
 bindsym $mod+w layout tabbed
+# %%hotkey: Toggle container split layout %%
 bindsym $mod+e layout toggle split
 
-# toggle tiling / floating
+# %%hotkey: Toggle tiling / floating %%
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
+# %%hotkey: Change focus between tiling / floating windows %%
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
+# %%hotkey: Focus the parent container %%
 bindsym $mod+a focus parent
 
 # focus the child container
@@ -149,6 +153,7 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+Shift+plus scratchpad show
 
+# %%hotkey: Toggle sticky mode %%
 bindsym $mod+Shift+s sticky toggle
 
 # put Video into fullscreen; ie: YouTube
@@ -166,24 +171,28 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-# reload the configuration file
+# %%hotkey: Reload the configuration file %%
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+
+# %%hotkey: Restart i3 inplace (preserves your layout/session, can be used to upgrade i3) %%
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+
+# %%hotkey: Exit i3 (logs you out of your X session) %%
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# open password manager
+# %%hotkey: Open password manager %%
 bindsym $mod+Shift+p exec keepass2
 
-# open
-bindsym $mod+Shift+f exec doublecmd
+# open file manager
+#bindsym $mod+Shift+f exec doublecmd
 
-# quickly open vitals spreadsheet
+# %%hotkey: Open vitals spreadsheet %%
 bindsym $mod+Shift+v split v; exec localc /home/jbenden/Documents/Personal/Medical/Vitals.ods
 
-# open file manager
+# %%hotkey: Launch file manager (Double Commander) %%
 bindsym $mod+n exec --no-startup-id doublecmd
+
+# %%hotkey: Launch file manager (Ranger) %%
 bindsym $mod+Shift+n exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
 
 # resize window (you can also use the mouse for that)
@@ -210,6 +219,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+# %%hotkey: Enter resizing mode %%
 bindsym $mod+r mode "resize"
 
 # Pulse Audio controls
