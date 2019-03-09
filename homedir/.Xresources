@@ -1,6 +1,7 @@
 *.font: Hack:antialias=true:hinting=true:style=Regular:size=12
 
 Emacs.font: Courier-14
+Emacs.alpha: 90
 
 Xft.dpi: 96
 Xft.antialias: true
