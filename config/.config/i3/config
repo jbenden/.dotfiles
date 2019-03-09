@@ -195,6 +195,12 @@ bindsym $mod+n exec --no-startup-id doublecmd
 # %%hotkey: Launch file manager (Ranger) %%
 bindsym $mod+Shift+n exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
 
+# %%hotkey: Capture screen shot %%
+bindsym $mod+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -e 'mv $f ~/Pictures'
+
+# %%hotkey: Capture screen shot after 2 second delay %%
+bindsym $mod+Shift+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -d 2 -e 'mv $f ~/Pictures'
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
