@@ -116,6 +116,8 @@ before layers configuration.
 You should not put any user code in there besides modifying the variable
 values."
 
+  (setq-default exec-path-from-shell-check-startup-files nil)
+
   ;; FreeBSD Bash shell is evil
   (when (equal system-type 'berkeley-unix)
     (setq exec-path-from-shell-arguments '("-c")))
