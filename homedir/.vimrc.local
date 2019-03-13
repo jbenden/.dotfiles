@@ -133,4 +133,6 @@ let g:syntastic_cpp_clang_check_exec='/usr/bin/clang-check-5.0'
 let g:syntastic_cpp_clang_check_post_args=""
 
 "" python provider
-let g:python3_host_prog = '/opt/anaconda3/bin/python3.7'
+" let g:python3_host_prog = '/opt/anaconda3/bin/python3.7'
+let g:python_host_prog = '/usr/bin/python2.7'
+
