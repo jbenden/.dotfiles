@@ -231,6 +231,9 @@ bindsym $mod+r mode "resize"
 # %%hotkey: Display i3 help %%
 bindsym $mod+F1 exec --no-startup-id $HOME/bin/dmenu_hotkeys.py i3
 
+# %%hotkey: Display application menu %%
+bindsym $mod+Escape exec --no-startup-id jgmenu_run
+
 # Pulse Audio controls
 # bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
 # bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
