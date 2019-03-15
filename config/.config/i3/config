@@ -228,6 +228,7 @@ mode "resize" {
 # %%hotkey: Enter resizing mode %%
 bindsym $mod+r mode "resize"
 
+# %%hotkey: Display i3 help %%
 bindsym $mod+F1 exec --no-startup-id $HOME/bin/dmenu_hotkeys.py i3
 
 # Pulse Audio controls
