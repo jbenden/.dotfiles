@@ -3,6 +3,12 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Rip-Rip/clang_complete', {'for': ['c', 'cpp']}
 Plug 'rhysd/vim-clang-format'
 
+"" i3 source code syntax highlighting
+Plug 'PotatoesMaster/i3-vim-syntax'
+
+"" Magit clone
+Plug 'jreybert/vimagit'
+
 "" javascript
 Plug 'jelera/vim-javascript-syntax'
 
