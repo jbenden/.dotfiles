@@ -133,7 +133,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # %%hotkey: Focus the parent container %%
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -151,8 +151,12 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 bindsym $mod+Tab workspace back_and_forth
 
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+Shift+plus scratchpad show
+# Scratchpad area
+# %%hotkey: Toggle the Terminal scratchpad window %%
+bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+
+# %%hotkey: Toggle the R-lang scratchpad window %%
+bindsym $mod+a [instance="math"] scratchpad show; [instance="math"] move position center
 
 # %%hotkey: Toggle sticky mode %%
 bindsym $mod+Shift+s sticky toggle
@@ -371,6 +375,24 @@ assign [class="(?i)brave"]                       $ws10
 assign [class="(?i)clementine"]                  $ws7
 assign [class="(?i)qmmp"]                        $ws7
 assign [class="(?i)thunderbird"]                 $ws9
+
+#######################################################################
+#
+# Dropdown/Scratchpad Windows
+#
+#######################################################################
+
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 1920 1080
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 5
+exec --no-startup-id $term -n dropdown -e tmux
+
+for_window [instance="math"] floating enable
+for_window [instance="math"] resize set 800 300
+for_window [instance="math"] move scratchpad
+for_window [instance="math"] border pixel 5
+exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q
 
 #######################################################################
 #
