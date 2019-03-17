@@ -191,6 +191,9 @@ bindsym $mod+Shift+p exec keepass2
 # open file manager
 #bindsym $mod+Shift+f exec doublecmd
 
+# %%hotkey: Open music player %%
+bindsym $mod+m exec --no-startup-id $term -e ncmpcpp
+
 # %%hotkey: Open vitals spreadsheet %%
 bindsym $mod+Shift+v split v; exec localc /home/jbenden/Documents/Personal/Medical/Vitals.ods
 
@@ -257,10 +260,15 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 # bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+#bindsym XF86AudioPlay exec playerctl play-pause
+#bindsym XF86AudioPause exec playerctl pause
+#bindsym XF86AudioNext exec playerctl next
+#bindsym XF86AudioPrev exec playerctl previous
+
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioPause exec mpc pause
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc previous
 
 # fix graphics glitch
 new_window none
@@ -419,6 +427,8 @@ exec --no-startup-id xautolock -time 30 -locker $HOME/bin/locks.sh &
 exec --no-startup-id /usr/bin/numlockx on
 # enable NetworkManager applet
 # exec --no-startup-id nm-applet &
+# enable MPD
+exec --no-startup-id mpd
 # mount the backup drive
 exec --no-startup-id udisksctl mount -b /dev/sda1
 

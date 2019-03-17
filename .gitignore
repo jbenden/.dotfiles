@@ -4,3 +4,9 @@
 /config/.config/Code Industry/**/*
 /config/.config/Code/**/*
 /homedir/.gitconfig
+/config/.config/mpd/database
+/config/.config/mpd/log
+/config/.config/mpd/pid
+/config/.config/mpd/state
+/config/.config/mpd/sticker.sql
+/config/.config/ncmpcpp/error.log
