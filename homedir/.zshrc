@@ -62,5 +62,8 @@ plugins=(clipboard git gpg-agent keychain sudo)
 ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # User configuration
 source $HOME/.config/zsh/zsh_settings
