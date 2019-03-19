@@ -1,0 +1,12 @@
+https://cfarm.tetaneutral.net/rss/ "~GNU Compiler Farm"
+https://github.com/buildbot/buildbot/tags.atom "~BuildBot (Releases on GH)"
+https://github.com/verifast/verifast/commits/master.atom "~Verifast (Recent Commits)"
+
+http://lukesmith.xyz/rss.xml
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith (YouTube)"
+
+https://twitrss.me/twitter_user_to_rss/?user=jbenden "~Joseph Benden (Twitter)"
+
+https://blog.qutebrowser.org/feeds/all.rss.xml "tech" "software"
+
+http://rss.cnn.com/rss/cnn_topstories.rss "news"

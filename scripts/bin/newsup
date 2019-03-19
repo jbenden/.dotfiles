@@ -1,0 +1,22 @@
+#!/bin/sh
+
+## get a working connection from Cron to the Desktop
+##
+## https://unix.stackexchange.com/questions/250276/access-to-users-session-d-bus-from-their-cron-commands
+SESSION_MANAGER=i3
+USER=jbenden
+
+export DISPLAY=:1
+export $(cat /proc/$(pgrep "$SESSION_MANAGER" -u "$USER")/environ \
+  |egrep -z '^DBUS_SESSION_BUS_ADDRESS=')
+
+## perform task
+ping -q -t 1 -c 1 `ip r | grep -m 1 default | cut -d ' ' -f 3` >/dev/null || exit
+
+/usr/bin/notify-send -i "/usr/share/icons/Adwaita/scalable/mimetypes/application-rss+xml-symbolic.svg" "Updating RSS feeds..."
+
+pgrep -x newsboat >/dev/null && /usr/bin/xdotool key --window "$(/usr/bin/xdotool search --name newsboat)" R && exit
+
+/usr/bin/newsboat -x reload
+
+/usr/bin/notify-send -i "/usr/share/icons/Adwaita/scalable/mimetypes/application-rss+xml-symbolic.svg" "RSS feed update complete."
