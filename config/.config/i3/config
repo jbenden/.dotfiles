@@ -188,8 +188,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # %%hotkey: Open password manager %%
 bindsym $mod+Shift+p exec keepass2
 
-# open file manager
-#bindsym $mod+Shift+f exec doublecmd
+# %%hotkey: Open news feeds reader %%
+bindsym $mod+f exec --no-startup-id $term -e newsboat
 
 # %%hotkey: Open music player %%
 bindsym $mod+m exec --no-startup-id $term -e ncmpcpp
