@@ -7,6 +7,9 @@ D	~/Downloads
 m	~/Music
 pp	~/Pictures
 vv	~/Videos
+vvp	~/Videos/Programming Courses
 cf	~/.config
-sc	~/.scripts
+sc	~/Source
+scb	~/Source/us.benden
+sct	~/Source/Third-Party
 mn	/mnt
