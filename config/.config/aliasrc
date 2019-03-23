@@ -1,0 +1,17 @@
+#!/bin/sh
+
+alias ka="killall" \
+	SS="sudo systemctl" \
+    f="ranger" \
+    e="$EDITOR" \
+    v="$EDITOR" \
+    x="sxiv -ft *" \
+    ls="ls -hN --color=auto --group-directories-first" \
+    ccat="highlight --out-format=ansi" \
+    ref="shortcuts >/dev/null; source ~/.config/shortcutrc"
+
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
+
+se() { du -a ~/bin/* ~/.config/* | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
+sv() { vcopy "$(du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf)" ;}
+vf() { fzf | xargs -r -I % $EDITOR % ;}
