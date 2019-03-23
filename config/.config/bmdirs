@@ -1,0 +1,12 @@
+# You can add comments to these files with #
+ac	~/Source/org.aircrack-ng/aircrack-ng
+aci	~/Source/org.aircrack-ng/aircrack-ng-infra
+h	~/
+d	~/Documents
+D	~/Downloads
+m	~/Music
+pp	~/Pictures
+vv	~/Videos
+cf	~/.config
+sc	~/.scripts
+mn	/mnt
