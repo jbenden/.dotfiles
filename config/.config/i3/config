@@ -3,7 +3,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-set $editor vim
+set $editor nvim
 set $term /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st
 
 set_from_resource $darkred     color1  #000000
@@ -24,6 +24,7 @@ set_from_resource $white       color15 #000000
 set $black       #282828
 set $darkblack   #1d2021
 set $transparent #00000000
+set $orange      #d65d0e
 
 set $height 28
 
@@ -48,10 +49,10 @@ workspace $ws10 gaps inner 0
 workspace $ws10 gaps outer 0
 
 #                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
-client.focused          $black      $black      $darkwhite  $darkblack  $darkred
+client.focused          $black      $black      $darkwhite  $darkblack  $orange
 client.unfocused        $black      $black      $white      $darkblack  $darkblack
 client.focused_inactive $black      $black      $white      $darkblack  $darkblack
-client.urgent           $darkred    $darkred    $black      $darkred    $darkred
+client.urgent           $darkred    $darkred    $black      $darkred    $orange
 client.background       $black
 
 
@@ -189,25 +190,55 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+p exec keepass2
 
 # %%hotkey: Open news feeds reader %%
-bindsym $mod+f exec --no-startup-id $term -e newsboat
+bindsym $mod+Shift+n exec --no-startup-id $term -n rss -e newsboat
 
 # %%hotkey: Open music player %%
-bindsym $mod+m exec --no-startup-id $term -e ncmpcpp
+bindsym $mod+m exec --no-startup-id $term -n music -e ncmpcpp
+
+# %%hotkey: Open music visualizer %%
+bindsym $mod+Shift+m exec --no-startup-id $term -n cava -e cava
 
 # %%hotkey: Open vitals spreadsheet %%
 bindsym $mod+Shift+v split v; exec localc /home/jbenden/Documents/Personal/Medical/Vitals.ods
 
 # %%hotkey: Launch file manager (Double Commander) %%
-bindsym $mod+n exec --no-startup-id doublecmd
+bindsym $mod+Shift+period exec --no-startup-id doublecmd
 
 # %%hotkey: Launch file manager (Ranger) %%
-bindsym $mod+Shift+n exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
+bindsym $mod+period exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
+bindsym XF86LaunchA exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
+
+# %%hotkey: System information %%
+bindsym $mod+i exec --no-startup-id $term -n htop -e htop
 
 # %%hotkey: Capture screen shot %%
 bindsym $mod+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -e 'mv $f ~/Pictures'
 
 # %%hotkey: Capture screen shot after 2 second delay %%
 bindsym $mod+Shift+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -d 2 -e 'mv $f ~/Pictures'
+
+# Press $mod+o followed by either f, t, Escape or Return to launch firefox,
+# thunderbird or return to the default mode, respectively.
+set $mode_launcher Launch: [b]rave [c]hrome [f]irefox [t]hunderbird
+# %%hotkey: Quick open application %%
+bindsym $mod+o mode "$mode_launcher"
+
+mode "$mode_launcher" {
+    bindsym b exec brave-browser
+    bindsym c exec google-chrome
+    bindsym f exec firefox
+    bindsym t exec thunderbird
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+
+set $freeze Distraction-free mode (super+shift+f to reactivate bindings)
+mode "$freeze" { bindsym $mod+Shift+f mode "default"
+}
+
+# %%hotkey: Distraction-free mode %%
+bindsym $mod+Shift+f mode "$freeze" ;; exec --no-startup-id notify-send "<b>Distraction-free mode activated.</b> Press Super+Shift+f to return."
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -235,6 +266,9 @@ mode "resize" {
 
 # %%hotkey: Enter resizing mode %%
 bindsym $mod+r mode "resize"
+
+# %%hotkey: Browse the web %%
+bindsym $mod+Shift+w exec --no-startup-id $BROWSER
 
 # %%hotkey: Display i3 help %%
 bindsym $mod+F1 exec --no-startup-id $HOME/bin/dmenu_hotkeys.py i3
@@ -269,6 +303,8 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioPause exec mpc pause
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc previous
+
+bindsym $mod+Scroll_Lock exec --no-startup-id "killall screenkey || screenkey"
 
 # fix graphics glitch
 new_window none
@@ -341,6 +377,11 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 
+for_window [class="Pinentry"] sticky enable
+for_window [window_role="GtkFileChooserDialog"] resize set 800 600
+for_window [window_role="GtkFileChooserDialog"] move position center
+for_window [title="Default - Wine desktop"] floating enable
+
 for_window [class="(?i)keepass"] floating enable
 for_window [class="(?i)keepass2"] floating enable
 for_window [class="(?i)plank"] floating enable; gaps inner 0; gaps outer 0
@@ -349,6 +390,7 @@ for_window [class="(?i)clementine"] floating enable
 for_window [class="(?i)qmmp"] floating enable
 for_window [class="(?i)gsimplecal"] floating enable, move position mouse, move down $height px
 for_window [class="(?i)qemu-system"] floating enable
+for_window [class="(?i)Remmina" title="(?i)Remmina Remote Desktop Client"] floating enable
 
 for_window [class="(?i)VirtualBox" title="(?i)Manager"] floating enable
 
@@ -359,7 +401,7 @@ for_window [class="(?i)blueman"] floating enable
 for_window [class="(?i)hexchat"] floating enable
 for_window [class="(?i)pinentry"] floating enable
 for_window [class="(?i)mpv"] floating enable
-for_window [class="(?i)JetBrains Toolbox"] floating enable
+for_window [class="(?i)jetbrains-toolbox"] floating enable
 for_window [class="(?i)nm-connection-editor"] floating enable
 
 #for_window [instance="sun-awt-X11-XFramePeer"] floating enable
@@ -370,8 +412,24 @@ for_window [instance="__nmtui"] floating enable
 #for_window [class="(?i)pavucontrol"] floating enable, move position mouse
 #for_window [class="(?i)pavucontrol" instance="pavucontrol-bar"] move down $height px
 
-for_window [class="(?i)doublecmd"] floating enable, resize 1280 720, sticky enable, move position 2506 1386
+for_window [class="(?i)doublecmd"] floating enable
+for_window [class="(?i)doublecmd"] resize set 2526 1376
+for_window [class="(?i)doublecmd"] sticky enable
+for_window [class="(?i)doublecmd"] move position center
 for_window [class="(?i)doublecmd" instance="Doublecmd"] move down $height px
+
+for_window [instance="rss"] floating enable
+for_window [instance="rss"] resize set 1438 863
+for_window [instance="rss"] move position 740 121
+
+for_window [instance="music"] floating enable
+for_window [instance="music"] resize set 1438 863
+for_window [instance="music"] move position center
+
+for_window [instance="cava"] floating enable
+for_window [instance="cava"] resize set 1608 198
+for_window [instance="cava"] sticky enable
+for_window [instance="cava"] move position 2214 1949
 
 assign [class="(?i)chrome"]                      $ws10
 assign [class="(?i)chromium"]                    $ws10
@@ -393,13 +451,13 @@ assign [class="(?i)thunderbird"]                 $ws9
 for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1920 1080
 for_window [instance="dropdown"] move scratchpad
-for_window [instance="dropdown"] border pixel 5
+for_window [instance="dropdown"] border pixel 4
 exec --no-startup-id $term -n dropdown -e tmux
 
 for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 800 300
 for_window [instance="math"] move scratchpad
-for_window [instance="math"] border pixel 5
+for_window [instance="math"] border pixel 4
 exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q
 
 #######################################################################
