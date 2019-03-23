@@ -10,3 +10,4 @@
 /config/.config/mpd/state
 /config/.config/mpd/sticker.sql
 /config/.config/ncmpcpp/error.log
+/config/.config/mpd/playlists/**/*
