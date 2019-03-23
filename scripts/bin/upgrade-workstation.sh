@@ -43,6 +43,7 @@ env DEBIAN_FRONTEND=noninteractive apt dist-upgrade -y
 
 echo "I: Cleaning packages..."
 env DEBIAN_FRONTEND=noninteractive apt autoremove -y
+env DEBIAN_FRONTEND=noninteractive apt autoclean -y
 
 
 echo "I: Done."
