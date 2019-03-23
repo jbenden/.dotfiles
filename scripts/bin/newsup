@@ -7,7 +7,7 @@ SESSION_MANAGER=i3
 USER=jbenden
 
 export DISPLAY=:1
-export $(cat /proc/$(pgrep "$SESSION_MANAGER" -u "$USER")/environ \
+export $(cat /proc/$(pgrep "$SESSION_MANAGER" -u "$USER" | tail -n 1)/environ \
   |egrep -z '^DBUS_SESSION_BUS_ADDRESS=')
 
 ## perform task
