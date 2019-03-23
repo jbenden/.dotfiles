@@ -1,6 +1,12 @@
 https://cfarm.tetaneutral.net/rss/ "~GNU Compiler Farm"
-https://github.com/buildbot/buildbot/tags.atom "~BuildBot (Releases on GH)"
-https://github.com/verifast/verifast/commits/master.atom "~Verifast (Recent Commits)"
+
+https://github.com/buildbot/buildbot/tags.atom "~BuildBot (Releases on GH)" "software"
+https://github.com/verifast/verifast/commits/master.atom "~Verifast (Recent Commits)" "software"
+https://github.com/syl20bnr/spacemacs/tags.atom "~Spacemacs (Releases on GH)" "software"
+https://github.com/Airblader/i3/commits.atom "~i3-gaps (Commits on GH)" "software"
+https://github.com/LukeSmithxyz/st/commits.atom "~St (Commits on GH)" "software"
+https://github.com/tryone144/compton/commits.atom "~Compton (Commits on GH)" "software"
+https://github.com/brndnmtthws/conky/commits.atom "~Conky (Commits on GH)" "software"
 
 http://lukesmith.xyz/rss.xml
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith (YouTube)"
