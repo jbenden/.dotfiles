@@ -403,6 +403,7 @@ for_window [class="(?i)pinentry"] floating enable
 for_window [class="(?i)mpv"] floating enable
 for_window [class="(?i)jetbrains-toolbox"] floating enable
 for_window [class="(?i)nm-connection-editor"] floating enable
+for_window [class="(?i)steam" title="(?i)Friends List"] floating enable
 
 #for_window [instance="sun-awt-X11-XFramePeer"] floating enable
 for_window [instance="__scratchpad"] floating enable
