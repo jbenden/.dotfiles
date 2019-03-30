@@ -8,7 +8,9 @@ alias ka="killall" \
     x="sxiv -ft *" \
     ls="ls -hN --color=auto --group-directories-first" \
     ccat="highlight --out-format=ansi" \
-    ref="shortcuts >/dev/null; source ~/.config/shortcutrc"
+    ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
+    sysinfo="inxi -v5 -xxx" \
+    alu="apt list --upgradable"
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
 
