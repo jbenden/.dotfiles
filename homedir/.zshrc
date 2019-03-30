@@ -58,7 +58,7 @@ zstyle :omz:plugins:keychain options --quiet
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(clipboard git gpg-agent keychain sudo)
+plugins=(git gpg-agent keychain sudo)
 ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
