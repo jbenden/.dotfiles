@@ -19,7 +19,7 @@ alias wanip="curl -s http://whatismijnip.nl |cut -d' ' -f 5"
 # Useful
 alias dev="ls /dev/"
 alias pingit="ping -c3 www.google.com"
-alias weather="curl -H \"Accept-Language: de\" wttr.in/Berlin"
+alias weather="~/go/bin/wego -d 5"
 alias glc="gloga | head -1 | cut -d ' ' -f2"
 alias tm="tmux a || tmux"
 
