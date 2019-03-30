@@ -76,7 +76,10 @@ floating_modifier $mod
 bindsym $mod+Shift+Return exec termite
 bindsym $mod+Return exec $term
 
-# lock terminal
+# %%hotkey: Browse Bookmarks %%
+bindsym $mod+b exec buku_run
+
+# %%hotkey: Lock terminal %%
 bindsym $mod+Ctrl+q exec --no-startup-id $HOME/bin/locks.sh
 
 # kill focused window
