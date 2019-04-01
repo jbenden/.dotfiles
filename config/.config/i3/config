@@ -220,6 +220,9 @@ bindsym $mod+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -e 'mv $f ~/Pict
 # %%hotkey: Capture screen shot after 2 second delay %%
 bindsym $mod+Shift+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -d 2 -e 'mv $f ~/Pictures'
 
+# %%hotkey: Perform a desktop-wide search %%
+bindsym $mod+forwardslash exec --no-startup-id recoll
+
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
 set $mode_launcher Launch: [b]rave [c]hrome [f]irefox [t]hunderbird
