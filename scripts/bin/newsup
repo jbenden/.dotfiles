@@ -13,10 +13,10 @@ export $(cat /proc/$(pgrep "$SESSION_MANAGER" -u "$USER" | tail -n 1)/environ \
 ## perform task
 ping -q -t 1 -c 1 `ip r | grep -m 1 default | cut -d ' ' -f 3` >/dev/null || exit
 
-/usr/bin/notify-send -i "/usr/share/icons/Adwaita/scalable/mimetypes/application-rss+xml-symbolic.svg" "Updating RSS feeds..."
+# /usr/bin/notify-send -i "/usr/share/icons/Adwaita/scalable/mimetypes/application-rss+xml-symbolic.svg" "Updating RSS feeds..."
 
 pgrep -x newsboat >/dev/null && /usr/bin/xdotool key --window "$(/usr/bin/xdotool search --name newsboat)" R && exit
 
 /usr/bin/newsboat -x reload
 
-/usr/bin/notify-send -i "/usr/share/icons/Adwaita/scalable/mimetypes/application-rss+xml-symbolic.svg" "RSS feed update complete."
+# /usr/bin/notify-send -i "/usr/share/icons/Adwaita/scalable/mimetypes/application-rss+xml-symbolic.svg" "RSS feed update complete."
