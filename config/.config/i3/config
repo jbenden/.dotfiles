@@ -213,6 +213,7 @@ bindsym XF86LaunchA exec --no-startup-id /home/jbenden/Source/Third-Party/st-Luk
 
 # %%hotkey: System information %%
 bindsym $mod+i exec --no-startup-id $term -n htop -e htop
+bindsym $mod+Shift+i exec --no-startup-id $term -n vtop -e vtop
 
 # %%hotkey: Capture screen shot %%
 bindsym $mod+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -e 'mv $f ~/Pictures'
@@ -225,14 +226,17 @@ bindsym $mod+slash exec --no-startup-id recoll
 
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
-set $mode_launcher Launch: [b]rave [c]hrome [f]irefox [t]hunderbird
+set $mode_launcher Launch: [a]tom [b]rave [c]hrome [C]ode [f]irefox [n]otable [t]hunderbird
 # %%hotkey: Quick open application %%
 bindsym $mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
+    bindsym a exec atom
     bindsym b exec brave-browser
     bindsym c exec google-chrome
+    bindsym C exec code
     bindsym f exec firefox
+    bindsym n exec notable
     bindsym t exec thunderbird
 
     bindsym Escape mode "default"
@@ -425,6 +429,14 @@ for_window [class="(?i)doublecmd"] sticky enable
 for_window [class="(?i)doublecmd"] move position center
 for_window [class="(?i)doublecmd" instance="Doublecmd"] move down $height px
 
+for_window [instance="htop"] floating enable
+for_window [instance="htop"] resize set 1438 863
+for_window [instance="htop"] move position 740 121
+
+for_window [instance="vtop"] floating enable
+for_window [instance="vtop"] resize set 1438 863
+for_window [instance="vtop"] move position 740 121
+
 for_window [instance="rss"] floating enable
 for_window [instance="rss"] resize set 1438 863
 for_window [instance="rss"] move position 740 121
@@ -437,6 +449,8 @@ for_window [instance="cava"] floating enable
 for_window [instance="cava"] resize set 1608 198
 for_window [instance="cava"] sticky enable
 for_window [instance="cava"] move position 2214 1949
+
+assign [class="(?i)calibre-gui"]                 $ws5
 
 assign [class="(?i)chrome"]                      $ws10
 assign [class="(?i)chromium"]                    $ws10
