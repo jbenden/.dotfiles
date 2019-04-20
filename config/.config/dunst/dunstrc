@@ -62,3 +62,8 @@
 	foreground = "#ebdbb2"
 	timeout = 0
 
+[thunderbird_ignore]
+    appname = Thunderbird
+    body = "*Connection to server*"
+    format = ""
+
