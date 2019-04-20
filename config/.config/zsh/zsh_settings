@@ -16,7 +16,9 @@ export PAGER=/usr/bin/less
 export TMPDIR=/home/jbenden/tmp
 
 # wish for Emacs key-bindings
-bindkey -e
+# bindkey -e
+# wish for Vim key-bindings
+bindkey -v
 
 # adjust command-line history settings.
 HISTFILE=$HOME/.zsh_history
