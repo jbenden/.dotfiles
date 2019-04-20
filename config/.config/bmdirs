@@ -3,6 +3,7 @@ ac	~/Source/org.aircrack-ng/aircrack-ng
 aci	~/Source/org.aircrack-ng/aircrack-ng-infra
 h	~/
 d	~/Documents
+df	~/.dotfiles
 dm	~/Documents/Personal/Medical/MedicationCard
 dp	~/Documents/Personal
 D	~/Downloads
