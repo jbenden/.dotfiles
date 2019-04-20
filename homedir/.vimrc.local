@@ -1,3 +1,5 @@
+" vi: foldmethod=marker foldlevel=0
+
 set ttyfast
 
 if !exists('g:not_finish_vimplug')
@@ -5,12 +7,14 @@ if !exists('g:not_finish_vimplug')
   if has("gui_running")
     set background=dark
     " colorscheme solarized
-    colorscheme gruvbox
+    colorscheme blame
     " set background=dark
   else
     " colorscheme molokai
     set background=dark
-    colorscheme gruvbox
+    " colorscheme gruvbox
+    set termguicolors
+    colorscheme blame
     " set background=dark
   endif
 endif
@@ -48,7 +52,7 @@ if &term =~ '256color'
 endif
 
 " vim-airline
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'bubblegum'
 let g:airline_powerline_fonts=1
 
 " autocmd vimenter * NERDTreeClose
@@ -136,3 +140,32 @@ let g:syntastic_cpp_clang_check_post_args=""
 " let g:python3_host_prog = '/opt/anaconda3/bin/python3.7'
 let g:python_host_prog = '/usr/bin/python2.7'
 
+" Keep cursor in the middle {{{
+set scrolloff=9999
+" }}}
+" Enable mouse suport {{{
+set mouse=a
+" }}}
+" Show 80 column {{{
+set colorcolumn=+1
+" }}}
+" Split in CORRECT places {{{
+set splitright splitbelow
+" }}}
+" Permanent undo {{{
+set undofile
+" }}}
+" Smart `0` {{{
+" `0` goes to the beginning of the text on first press and to the beginning
+" of the line on second press. It alternates afterwards.
+nnoremap <expr> 0 virtcol('.') - 1 <= indent('.') && col('.') > 1 ? '0' : '_'
+" }}}
+" Folding {{{
+set foldmethod=syntax
+set foldlevel=999
+
+nnoremap <expr> <CR> foldlevel('.') ? 'za' : "\<CR>"
+" }}}
+" Format {{{
+command! Clean keeppatterns %s/\s\+$//e | set nohlsearch
+" }}}
