@@ -9,7 +9,7 @@ https://github.com/LukeSmithxyz/st/commits.atom "~St (Commits on GH)" "software"
 https://github.com/tryone144/compton/commits.atom "~Compton (Commits on GH)" "software"
 https://github.com/brndnmtthws/conky/commits.atom "~Conky (Commits on GH)" "software"
 
-http://lukesmith.xyz/rss.xml
+# http://lukesmith.xyz/rss.xml
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith (YouTube)" "fun"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~Linus Tech Tips (YouTube)" "tech" "fun"
@@ -20,6 +20,8 @@ https://twitrss.me/twitter_user_to_rss/?user=jbenden "~Joseph Benden (Twitter)"
 
 https://blog.qutebrowser.org/feeds/all.rss.xml "tech" "software"
 
-http://dlang.org/blog/index.php/feed/ "software"
+http://dlang.org/blog/index.php/feed/ "programming"
+https://embeddedartistry.com/blog?format=RSS "c++" "programming" "consulting" "embedded"
+https://awfulcode.io/feed/ "c++" "programming"
 
 http://rss.cnn.com/rss/cnn_topstories.rss "news"
