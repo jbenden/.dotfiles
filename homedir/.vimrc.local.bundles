@@ -16,3 +16,5 @@ Plug 'jelera/vim-javascript-syntax'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'morhetz/gruvbox'
 Plug 'hauleth/blame.vim'
+
+Plug 'tpope/vim-commentary'
