@@ -438,16 +438,19 @@ for_window [instance="vtop"] resize set 1438 863
 for_window [instance="vtop"] move position 740 121
 
 for_window [instance="rss"] floating enable
+for_window [instance="rss"] border none
 for_window [instance="rss"] resize set 1438 863
 for_window [instance="rss"] move position 740 121
 
 for_window [instance="music"] floating enable
+for_window [instance="music"] border none
 for_window [instance="music"] resize set 1438 863
 for_window [instance="music"] move position center
 
 for_window [instance="cava"] floating enable
 for_window [instance="cava"] resize set 1608 198
 for_window [instance="cava"] sticky enable
+for_window [instance="cava"] border none
 for_window [instance="cava"] move position 2214 1949
 
 assign [class="(?i)calibre-gui"]                 $ws5
@@ -463,6 +466,9 @@ assign [class="(?i)clementine"]                  $ws7
 assign [class="(?i)qmmp"]                        $ws7
 assign [class="(?i)thunderbird"]                 $ws9
 
+# switch to workspace with urgent window automatically
+for_window [urgent=latest] focus
+
 #######################################################################
 #
 # Dropdown/Scratchpad Windows
@@ -472,13 +478,13 @@ assign [class="(?i)thunderbird"]                 $ws9
 for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1920 1080
 for_window [instance="dropdown"] move scratchpad
-for_window [instance="dropdown"] border pixel 4
+for_window [instance="dropdown"] border none
 exec --no-startup-id $term -n dropdown -e tmux
 
 for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 800 300
 for_window [instance="math"] move scratchpad
-for_window [instance="math"] border pixel 4
+for_window [instance="math"] border none
 exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q
 
 #######################################################################
