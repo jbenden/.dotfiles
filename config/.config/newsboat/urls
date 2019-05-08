@@ -20,8 +20,12 @@ https://twitrss.me/twitter_user_to_rss/?user=jbenden "~Joseph Benden (Twitter)"
 
 https://blog.qutebrowser.org/feeds/all.rss.xml "tech" "software"
 
+https://www.phoronix.com/rss.php "tech" "~Phoronix"
+
 http://dlang.org/blog/index.php/feed/ "programming"
 https://embeddedartistry.com/blog?format=RSS "c++" "programming" "consulting" "embedded"
 https://awfulcode.io/feed/ "c++" "programming"
+https://drewdevault.com/feed.xml "programming" "~Drew DeVault Blog"
+https://embeddedgurus.com/barr-code/feed/ "programming" "~Embedded Gurus (Barr Code)"
 
 http://rss.cnn.com/rss/cnn_topstories.rss "news"
