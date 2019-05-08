@@ -128,6 +128,10 @@ augroup vimrc-javascript
 augroup END
 
 " syntastic
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
 let g:syntastic_python_checkers=['python', 'flake8']
 let g:syntastic_c_checkers=['clang_check']
 let g:syntastic_c_clang_check_exec='/usr/bin/clang-check-5.0'
@@ -168,4 +172,16 @@ nnoremap <expr> <CR> foldlevel('.') ? 'za' : "\<CR>"
 " }}}
 " Format {{{
 command! Clean keeppatterns %s/\s\+$//e | set nohlsearch
+" }}}
+" Custom bindings {{{
+" Browse airline tabs
+:nnoremap <C-p> :bnext<CR>
+:nnoremap <C-o> :bprevious<CR>
+
+" Comment block
+vnoremap <silent> <C-k> :Commentary<cr>
+vnoremap <silent> <C-_> :Commentary<cr>
+
+" Select all
+map <C-a> <esc>ggVG<CR>
 " }}}
