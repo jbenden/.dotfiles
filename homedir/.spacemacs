@@ -32,49 +32,55 @@ values."
    dotspacemacs-configuration-layers
    '(
      windows-scripts
+
      vimscript
+
      ansible
 
      (auto-completion :variables auto-completion-enable-help-tooltips t
-                                          auto-completion-enable-sort-by-usage t)
+                                 auto-completion-enable-sort-by-usage t)
 
      ;; better-defaults
 
-     (c-c++ :variables c-c++-enable-clang-support t)
+     (c-c++ :variables
+            c-c++-adopt-subprojects t
+            c-c++-backend 'lsp-cquery
+            c-c++-lsp-executable (file-truename "~/Source/Third-Party/cquery/build/cquery")
+            c-c++-lsp-sem-highlight-rainbow t)
 
     ;; cscope
 
-     (dash :variables helm-dash-docset-newpath
-                      "/home/jbenden/.local/share/Zeal/Zeal/docsets")
+     ;; (dash :variables helm-dash-docset-newpath
+     ;;                 "/home/jbenden/.local/share/Zeal/Zeal/docsets")
 
-     (elfeed :variables rmh-elfeed-org-files (list "~/.emacs.d/private/elfeeds.org"))
+     ;; (elfeed :variables rmh-elfeed-org-files (list "~/.emacs.d/private/elfeeds.org"))
 
      emacs-lisp
 
      git
 
-     gtags
+     ;; gtags
 
      helm
 
      html
 
-     javascript
+     ;; javascript
 
      latex
 
      markdown
 
-     ocaml
+     ;; ocaml
 
      ;; org
 
-     python
+     ;; python
 
      ;; (rust :variables
      ;;       rust-format-on-save t)
 
-     semantic
+     ;; semantic
 
      search-engine
 
@@ -118,6 +124,8 @@ You should not put any user code in there besides modifying the variable
 values."
 
   (setq-default exec-path-from-shell-check-startup-files nil)
+
+  (setq cquery-extra-init-params '(:cacheFormat "msgpack"))
 
   ;; FreeBSD Bash shell is evil
   (when (equal system-type 'berkeley-unix)
