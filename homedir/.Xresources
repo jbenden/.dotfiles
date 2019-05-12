@@ -1,5 +1,12 @@
 *.font: Hack:antialias=true:hinting=true:style=Regular:size=12
 
+st.font: Hack:antialias=true:hinting=true:style=Regular:size=14
+st.alpha: 0.86
+st.termname: st-256color
+st.borderpx: 4
+st.xfps: 120
+st.actionfps: 60
+
 Emacs.font: Courier-14
 Emacs.alpha: 90
 
