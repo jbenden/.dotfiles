@@ -322,7 +322,7 @@ new_window none
 ### i3-gaps stuff ###
 
 # Necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 # Smart Gaps
 # smart_gaps on
