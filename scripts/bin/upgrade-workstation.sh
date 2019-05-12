@@ -21,6 +21,7 @@ function ondone()
 }
 trap "ondone \$?" EXIT
 
+if [ 1 -eq 2 ]; then
 echo "I: Looking for kernel upgrade..."
 if env DEBIAN_FRONTEND=noninteractive apt list -q --upgradable | grep -qE '^(linux-|intel-|grub-|fwupdate-|fwupd|firmware-|efibootmgr|amd64-microcode|initramfs-)'; then
 	CNT=$(find /boot -name 'vmlinuz-*' 2>/dev/null | sort -V | wc -l)
@@ -36,6 +37,7 @@ if env DEBIAN_FRONTEND=noninteractive apt list -q --upgradable | grep -qE '^(lin
 	fi
 else
 	echo "W: No kernel upgrade is available."
+fi
 fi
 
 echo "I: Upgrading packages..."
