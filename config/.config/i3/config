@@ -467,7 +467,7 @@ assign [class="(?i)qmmp"]                        $ws7
 assign [class="(?i)thunderbird"]                 $ws9
 
 # switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
+#for_window [urgent=latest] focus
 
 #######################################################################
 #
