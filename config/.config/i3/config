@@ -312,7 +312,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioPause exec mpc pause
 bindsym XF86AudioNext exec mpc next
-bindsym XF86AudioPrev exec mpc previous
+bindsym XF86AudioPrev exec mpc prev
 
 bindsym $mod+Scroll_Lock exec --no-startup-id "killall screenkey || screenkey"
 
