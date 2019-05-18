@@ -193,13 +193,14 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+p exec keepass2
 
 # %%hotkey: Open news feeds reader %%
-bindsym $mod+Shift+n exec --no-startup-id $term -n rss -e newsboat
+exec --no-startup-id $term -n dropdown -A 0.8 -f "Hack:antialias=true:hinting=true:style=Regular:size=14" -e tmux
+bindsym $mod+Shift+n exec --no-startup-id $term -n rss -A 0.8 -f "Hack:antialias=true:hinting=true:style=Regular:size=14" -e newsboat
 
 # %%hotkey: Open music player %%
-bindsym $mod+m exec --no-startup-id $term -n music -e ncmpcpp
+bindsym $mod+m exec --no-startup-id $term -n music -A 0.8 -f "Hack:antialias=true:hinting=true:style=Regular:size=14" -e ncmpcpp
 
 # %%hotkey: Open music visualizer %%
-bindsym $mod+Shift+m exec --no-startup-id $term -n cava -e cava
+bindsym $mod+Shift+m exec --no-startup-id $term -A 0.5 -f "Hack:antialias=true:hinting=true:style=Regular:size=8" -n cava -e cava
 
 # %%hotkey: Open vitals spreadsheet %%
 bindsym $mod+Shift+v split v; exec localc /home/jbenden/Documents/Personal/Medical/Vitals.ods
@@ -322,7 +323,7 @@ new_window none
 ### i3-gaps stuff ###
 
 # Necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # Smart Gaps
 # smart_gaps on
@@ -480,7 +481,7 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1920 1080
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border none
-exec --no-startup-id $term -n dropdown -e tmux
+exec --no-startup-id $term -n dropdown -A 0.8 -f "Iosevka Term:antialias=true:hinting=true:size=16" -e tmux
 
 for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 800 300
