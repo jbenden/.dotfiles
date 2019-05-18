@@ -65,6 +65,7 @@ export GROFF_NO_SGR=1
 
 # Load wal color theme for every terminal.
 cat ~/.cache/wal/sequences
+# NOTE: Also see wpgtk for setting GTK theme
 
 # Output machine information.
 [ -x /usr/bin/neofetch ] && echo && /usr/bin/neofetch
