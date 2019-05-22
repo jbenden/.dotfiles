@@ -115,8 +115,8 @@ autocmd FileType *
 "autocmd FileType h setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType c setlocal tabstop=4 shiftwidth=4
 autocmd FileType h setlocal tabstop=4 shiftwidth=4
-autocmd FileType cpp setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd FileType hpp setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType cpp setlocal tabstop=2 shiftwidth=2
+autocmd FileType hpp setlocal tabstop=2 shiftwidth=2
 
 " javascript
 let g:javascript_enable_domhtmlcss = 1
