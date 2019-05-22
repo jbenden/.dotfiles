@@ -13,7 +13,9 @@ if !exists('g:not_finish_vimplug')
     " colorscheme molokai
     set background=dark
     " colorscheme gruvbox
-    set termguicolors
+    if has('termguicolors')
+      set termguicolors
+    endif
     colorscheme blame
     " set background=dark
   endif
