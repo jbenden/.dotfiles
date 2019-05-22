@@ -171,6 +171,10 @@ set t_Co=256
 set guioptions=egmrti
 set gfn=Monospace\ 10
 
+" Don't wake up system with blinking cursor:
+" " http://www.linuxpowertop.org/known.php
+let &guicursor = &guicursor . ",a:blinkon0"
+
 if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
     set guifont=Menlo:h12
