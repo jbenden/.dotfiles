@@ -122,7 +122,7 @@ set backspace=indent,eol,start
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
-set expandtab
+" set expandtab
 
 "" Map leader to ,
 let mapleader=','
@@ -437,8 +437,8 @@ nnoremap <Leader>o :.Gbrowse<CR>
 "*****************************************************************************
 
 " c
-autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
-autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType c setlocal tabstop=4 shiftwidth=4
+autocmd FileType cpp setlocal tabstop=4 shiftwidth=4
 
 
 " go
