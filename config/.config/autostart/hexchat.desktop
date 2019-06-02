@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Hexchat Applet
+Comment=Connect to IRC
+Icon=hexchat
+Exec=hexchat --minimize=2
+Terminal=false
+Type=Application
