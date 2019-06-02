@@ -32,6 +32,7 @@ https://awfulcode.io/feed/ "c++" "programming"
 https://drewdevault.com/feed.xml "programming" "~Drew DeVault Blog"
 https://embeddedgurus.com/barr-code/feed/ "programming" "~Embedded Gurus (Barr Code)"
 
+https://github.com/clearlinux-pkgs/glibc/commits.atom "~Clear Glibc (Commits on GH)" "software"
 https://github.com/clearlinux-pkgs/linux/commits.atom "~Clear Linux (Commits on GH)" "software"
 https://www.kernel.org/feeds/kdist.xml "software"
 
