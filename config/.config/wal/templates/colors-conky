@@ -4,6 +4,7 @@ conky.config = {{
     border_width = 0,
 	color0 = '{color6}',
 	color1 = '{color4}',
+	color2 = '{color4}',
 	color5 = '{color6}',
     format_human_readable = true,
     --cpu_avg_samples = 2,
@@ -21,9 +22,9 @@ conky.config = {{
 	--display = ,
 	--xinerama_head = ,
 	double_buffer = true,
-    --draw_borders = false,
-    --draw_graph_borders = true,
-    --draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
     draw_shades = false,
     --extra_newline = false,
     font = 'Hack:size=9',
@@ -37,7 +38,7 @@ conky.config = {{
     --minimum_height = 5,
 	--minimum_width = 5,
     net_avg_samples = 4,
-    --no_buffers = true,
+    no_buffers = true,
     --out_to_console = false,
 	--out_to_http = false,
 	--out_to_ncurses = false,
@@ -52,9 +53,9 @@ conky.config = {{
 	own_window_transparent = false,
     own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager,below',
     own_window_type = 'override',
-	--short_units = true,
+	short_units = true,
     show_graph_scale = true,
-    --show_graph_range = true,
+    show_graph_range = false,
     --stippled_borders = 0,
 	--text_buffer_size = 256,
 	--top_cpu_separate = true,
@@ -64,7 +65,8 @@ conky.config = {{
     update_interval = 3.0,
 	update_interval_on_battery = 5,
     use_spacer = 'none',
-    use_xft = true
+    use_xft = true,
+	xftalpha = 0.9
 }}
 
 conky.text = [[
@@ -83,10 +85,10 @@ Brightness: n/a ${{alignr}}Uptime: $alignr$uptime
 
 $color5${{hr 1}}
 
-${{color0}}${{goto 50}}$cpu% ${{goto 90}}${{freq}}mHz ${{goto 180}}${{color0}}${{hwmon 2 temp 1}}°C\
+${{color0}}${{goto 50}}$cpu% ${{goto 90}}${{freq}}mHz ${{goto 180}}${{color0}}${{hwmon 1 temp 1}}°C\
 ${{alignr 40}}${{color0}}$memperc% = $mem / $memmax
-${{color0}}${{cpugraph 120,250 1f1f1f 2d2d2d}} \
-${{color0}}${{memgraph 120,250 1f1f1f 2d2d2d}}
+${{color0}}${{cpugraph 120,250}} \
+${{color0}}${{memgraph 120,250}}
 ${{color0}}CPU 1 : $color0${{cpu cpu1}}% ${{goto 100}}${{cpubar cpu1 12,150}}  \
 ${{color0}}CPU 5 : ${{alignr 5}}$color0${{cpu cpu5}}% ${{cpubar cpu5 12,150}}
 ${{color0}}CPU 2 : $color0${{cpu cpu2}}% ${{goto 100}}${{cpubar cpu2 12,150}}  \
@@ -104,8 +106,8 @@ $color5${{hr 1}}
  ${{goto 160}}${{color0}}${{diskio_read mapper/storage-home}}\
  ${{goto 242}}${{color0}}R|${{color0}}|W\
  ${{goto 320}}${{color0}}${{diskio_write mapper/storage-home}}
-${{color0}}${{diskiograph_read 60,250 1f1f1f 2d2d2d}} \
-${{color0}}${{diskiograph_write 60,250 1f1f1f 2d2d2d}}
+${{color0}}${{diskiograph_read 60,250}} \
+${{color0}}${{diskiograph_write 60,250}}
  ${{color0}}${{fs_used /home}} /\
  ${{color0}}${{fs_size /home}} \
  ${{color0}}${{fs_bar 12 /home}}
@@ -138,8 +140,8 @@ ${{if_up enp3s0}}\
  ${{goto 180}}${{color0}}${{downspeed enp3s0}}\
  ${{goto 245}}↓${{color0}}↑ ${{upspeed enp3s0}}\
  ${{goto 430}}${{color0}}T:${{totalup enp3s0}}
-${{color0}}${{downspeedgraph enp3s0 90,250 1f1f1f 2d2d2d}} \
-${{color0}}${{upspeedgraph enp3s0 90,250 1f1f1f 2d2d2d}}
+${{color0}}${{downspeedgraph enp3s0 90,250}} \
+${{color0}}${{upspeedgraph enp3s0 90,250}}
 ${{color0}}ID: ${{color0}}enp3s0 \
 ${{alignr}}${{color0}}Ethernet
 ${{color0}}IP: ${{color0}}${{addr enp3s0}} \
