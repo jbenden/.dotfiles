@@ -503,8 +503,8 @@ exec_always --no-startup-id wal -R &
 # compositor
 exec --no-startup-id compton -b &
 # notification daemon
-exec_always --no-startup-id dunst -lb "$black" -nb "$black" -cb "$black" -lf "$darkred" -bf "$darkred" -cf "$darkred" -nf "$darkred" -fn "ypn envypn 12" -s -lto 3 -nto 5 -cto 0
-#exec --no-startup-id dunst &
+# exec_always --no-startup-id dunst -lb "$black" -nb "$black" -cb "$black" -lf "$darkred" -bf "$darkred" -cf "$darkred" -nf "$darkred" -fn "ypn envypn 12" -s -lto 3 -nto 5 -cto 0
+# exec_always --no-startup-id dunst -config /home/jbenden/.cache/wal/colors-dunstrc
 exec --no-startup-id conky -d
 # handle screensaver
 exec --no-startup-id xset +dpms
