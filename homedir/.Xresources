@@ -3,7 +3,7 @@
 !st.font: Hack:antialias=true:hinting=true:style=Regular:size=14
 st.font: Iosevka Term:antialias=true:hinting=true:size=16
 ! st.alpha: 0.86
-st.alpha: 0.01
+st.alpha: 0.80
 st.termname: st-256color
 st.borderpx: 4
 st.xfps: 120
