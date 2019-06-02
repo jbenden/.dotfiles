@@ -5,6 +5,7 @@
 set $mod Mod4
 set $editor nvim
 set $term /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st
+set $primary_font Iosevka Term:antialias=true:hinting=true:size=16
 
 set_from_resource $darkred     color1  #000000
 set_from_resource $red         color9  #000000
@@ -193,11 +194,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+p exec keepass2
 
 # %%hotkey: Open news feeds reader %%
-exec --no-startup-id $term -n dropdown -A 0.8 -f "Hack:antialias=true:hinting=true:style=Regular:size=14" -e tmux
-bindsym $mod+Shift+n exec --no-startup-id $term -n rss -A 0.8 -f "Hack:antialias=true:hinting=true:style=Regular:size=14" -e newsboat
+bindsym $mod+Shift+n exec --no-startup-id $term -n rss -A 0.8 -f "$primary_font" -e newsboat
 
 # %%hotkey: Open music player %%
-bindsym $mod+m exec --no-startup-id $term -n music -A 0.8 -f "Hack:antialias=true:hinting=true:style=Regular:size=14" -e ncmpcpp
+bindsym $mod+m exec --no-startup-id $term -n music -A 0.8 -f "$primary_font" -e ncmpcpp
 
 # %%hotkey: Open music visualizer %%
 bindsym $mod+Shift+m exec --no-startup-id $term -A 0.5 -f "Hack:antialias=true:hinting=true:style=Regular:size=8" -n cava -e cava
@@ -209,8 +209,8 @@ bindsym $mod+Shift+v split v; exec localc /home/jbenden/Documents/Personal/Medic
 bindsym $mod+Shift+period exec --no-startup-id doublecmd
 
 # %%hotkey: Launch file manager (Ranger) %%
-bindsym $mod+period exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
-bindsym XF86LaunchA exec --no-startup-id /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -i -g 180x60 -e ranger
+bindsym $mod+period exec --no-startup-id $term -f "$primary_font" -i -g 180x60 -e ranger
+bindsym XF86LaunchA exec --no-startup-id $term -f "$primary_font" -i -g 180x60 -e ranger
 
 # %%hotkey: System information %%
 bindsym $mod+i exec --no-startup-id $term -n htop -e htop
@@ -481,7 +481,7 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1920 1080
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border none
-exec --no-startup-id $term -n dropdown -A 0.8 -f "Iosevka Term:antialias=true:hinting=true:size=16" -e tmux
+exec --no-startup-id $term -n dropdown -A 0.8 -f "$primary_font" -e tmux
 
 for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 800 300
