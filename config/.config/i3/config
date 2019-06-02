@@ -424,6 +424,7 @@ for_window [instance="__nmtui"] floating enable
 
 #for_window [class="(?i)pavucontrol"] floating enable, move position mouse
 #for_window [class="(?i)pavucontrol" instance="pavucontrol-bar"] move down $height px
+for_window [class="(?i)pulseeffects"] floating enable, border pixel 0, move position 2216 1490, move workspace $ws7
 
 for_window [class="(?i)doublecmd"] floating enable
 for_window [class="(?i)doublecmd"] resize set 2526 1376
