@@ -24,6 +24,23 @@ https://blog.qutebrowser.org/feeds/all.rss.xml "tech" "software"
 
 https://www.phoronix.com/rss.php "tech" "~Phoronix"
 
+http://neverworkintheory.org/feed.xml "programming"
+http://blog.martinig.ch/feed/ "programming" "testing"
+https://bssw.io/items.rss "programming" "testing" "tech"
+https://blog.pragmaticengineer.com/feed/ "programming" "networking" "distributed"
+
+https://grahamc.com/feed/ "nix" "nixos" "functional" "linux" "haskell" "unix"
+
+https://bitemyapp.com/rss.xml "haskell" "programming"
+https://haskellweekly.news/haskell-weekly.atom "haskell" "programming"
+https://lexi-lambda.github.io/feeds/all.atom.xml "haskell" "programming" "functional"
+http://conal.net/blog/feed "programming" "haskell" "functional" "numerical" "maths"
+
+https://jameshfisher.com/feed.xml "programming" "maths" "numerical" "c" "unix" "networking" "functional" "haskell"
+https://microkerneldude.wordpress.com/feed/ "seL4" "numerical" "maths" "programming" "news" "numerical"
+http://www.pathsensitive.com/feeds/posts/default "programming"
+https://begriffs.com/atom.xml "programming" "c" "news" "software"
+https://thoughts-on-cpp.com/feed/ "c++" "programming" "numerical"
 https://herbsutter.com/feed/ "tech" "programming" "c++"
 https://blog.atomist.com/rss/ "tech" "startup"
 https://bootlin.com/feed/rss/ "tech" "programming"
