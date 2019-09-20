@@ -8,7 +8,7 @@
 ;=====================================================
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
+background = #CF222222
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -20,7 +20,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 32
+height = 30
 bottom = false
 offset-x = 0
 offset-y = 0
@@ -30,7 +30,7 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 1
 ;line-color = #f00
 line-color = ${colors.primary}
 
@@ -44,8 +44,8 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Fantasque Sans Mono:pixelsize=12;2"
-font-1 = "Ubuntu Mono Nerd Font:size=12;2"
+font-0 = "Fantasque Sans Mono:pixelsize=11;2"
+font-1 = "Ubuntu Mono Nerd Font:size=11;2"
 
 ;font-0 = "Monoid Regular Nerd Font Complete:fontformat=truetype:pixelsize=12;1"
 ;font-1 = FontAwesome:fontformat=truetype:size=10:antialias=false;0
@@ -55,7 +55,8 @@ font-1 = "Ubuntu Mono Nerd Font:size=12;2"
 
 modules-left = i3
 modules-center = xwindow
-modules-right = pkg weather volume memory cpu wlan eth battery temperature date powermenu
+;modules-right = pkg weather volume memory cpu wlan eth battery temperature date powermenu
+modules-right = weather powermenu
 
 tray-position = right
 tray-padding = 2
@@ -72,6 +73,45 @@ wm-restack = i3
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/bottom]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 28
+bottom = true
+offset-x = 0
+offset-y = 0
+fixed-center = true
+
+background = #9F222222
+foreground = ${colors.foreground}
+
+line-size = 0
+;line-color = #f00
+line-color = ${colors.primary}
+
+border-size = 0
+;border-color = #00000000
+border-color = ${colors.background}
+
+padding-left = 6
+padding-right = 6
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = "Fantasque Sans Mono:pixelsize=11;2"
+font-1 = "Ubuntu Mono Nerd Font:size=11;2"
+
+modules-left = mpd volume
+modules-center = date
+modules-right = cpu memory wlan eth battery temperature pkg
+
+;wm-restack = bspwm
+wm-restack = i3
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -173,6 +213,7 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-prefix = " "
 
 icon-prev = 
 icon-stop = 
@@ -180,7 +221,7 @@ icon-play = 
 icon-pause = 
 icon-next = 
 
-label-song-maxlen = 25
+label-song-maxlen = 192
 label-song-ellipsis = true
 
 [module/xbacklight]
@@ -211,7 +252,10 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 ; format-underline = #4C4C4B
-label = %percentage:2%%
+; label = %percentage:2%%
+label = "%percentage:2%%"
+;label-margin-left = 1
+;label-margin-right = 1
 
 [module/memory]
 type = internal/memory
@@ -219,7 +263,8 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 ; format-underline = #4C4C4B
-label = %percentage_used%%
+; label = %percentage_used%%
+label = %mb_used%
 
 [module/wlan]
 type = internal/network
@@ -269,7 +314,7 @@ date = " %a %b %d, %Y"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 ; format-underline = #4C4C4B
 
@@ -278,13 +323,20 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
+format-volume-prefix = " "
+format-volume-prefix-foreground = ${colors.foreground-alt}
+
+;format-volume = <label-volume> <percentage-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${colors.foreground}
 
 format-muted-prefix = "婢 "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
+
+ramp-volume-0 = .
+ramp-volume-1 = o
+ramp-volume-2 = O
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -356,7 +408,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = >
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
@@ -371,10 +423,10 @@ menu-0-1-exec = menu-open-2
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-1-exec = /usr/lib/kde4/libexec/kdesu systemctl reboot now
 
 menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
+menu-2-0-exec = /usr/lib/kde4/libexec/kdesu systemctl poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
