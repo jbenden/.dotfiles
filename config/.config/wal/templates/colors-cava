@@ -21,7 +21,7 @@ gradient_color_2 = "{color4}"
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
 # Higher values means smoother, but less precise. 0 to disable.
-integral = 40
+integral = 55
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
 monstercat = 1
@@ -30,3 +30,17 @@ monstercat = 1
 # Set gravity percentage for "drop off". Higher values means bars will drop faster.
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
 gravity = 200
+
+[eq]
+
+# This one is tricky. You can have as much keys as you want.
+# Remember to uncomment more then one key! More keys = more precision.
+# Look at readme.md on github for further explanations and examples.
+1 = 7 # bass
+2 = 6
+3 = 5 # midtone
+4 = 5
+5 = 5 # treble
+6 = 7
+7 = 7
+
