@@ -228,7 +228,7 @@ bindsym $mod+slash exec --no-startup-id recoll
 
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
-set $mode_launcher Launch: [a]tom [b]rave [c]hrome [C]ode [f]irefox [n]otable [t]hunderbird
+set $mode_launcher Launch: [a]tom [b]rave [c]hrome [C]ode [f]irefox [r]esearch firefox [n]otable [t]hunderbird
 # %%hotkey: Quick open application %%
 bindsym $mod+o mode "$mode_launcher"
 
@@ -237,9 +237,10 @@ mode "$mode_launcher" {
     bindsym b exec brave-browser
     bindsym c exec google-chrome
     bindsym C exec code
-    bindsym f exec firefox
+    bindsym f exec firefox --no-remote -P default
     bindsym n exec notable
     bindsym t exec thunderbird
+	bindsym r exec firefox --no-remote --class=FFSecond -P Second
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
@@ -469,6 +470,8 @@ for_window [instance="cava"] border none
 for_window [instance="cava"] move position 2214 1949
 
 assign [class="(?i)calibre-gui"]                 $ws5
+
+assign [class="(?i)ffsecond"]                    $ws5
 
 assign [class="(?i)chrome"]                      $ws10
 assign [class="(?i)chromium"]                    $ws10
