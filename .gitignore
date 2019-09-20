@@ -11,3 +11,6 @@
 /config/.config/mpd/sticker.sql
 /config/.config/ncmpcpp/error.log
 /config/.config/mpd/playlists/**/*
+/config/.config/fish/conf.d/z00_lmod.fish
+/config/.config/fish/fish_history
+/config/.config/fish/fishd.*
