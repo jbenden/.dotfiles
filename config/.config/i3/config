@@ -459,6 +459,11 @@ for_window [instance="rss"] border none
 for_window [instance="rss"] resize set 1438 863
 for_window [instance="rss"] move position 740 121
 
+for_window [instance="ranger"] floating enable
+for_window [instance="ranger"] border none
+for_window [instance="ranger"] resize set 1438 863
+for_window [instance="ranger"] move position center
+
 for_window [instance="music"] floating enable
 for_window [instance="music"] border none
 for_window [instance="music"] resize set 1438 863
