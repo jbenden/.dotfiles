@@ -513,6 +513,10 @@ exec --no-startup-id xautolock -time 30 -locker $HOME/bin/locks.sh &
 exec --no-startup-id /home/jbenden/Source/Third-Party/unclutter-xfixes/unclutter -b
 # enable numlock key
 exec --no-startup-id /usr/bin/numlockx on
+
+# exec --no-startup-id $term -n dropdown -A 0.8 -f "$primary_font" -e tmux
+# exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q
+
 # enable NetworkManager applet
 # exec --no-startup-id nm-applet &
 # enable MPD
