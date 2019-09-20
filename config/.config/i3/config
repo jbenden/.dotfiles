@@ -478,17 +478,15 @@ assign [class="(?i)thunderbird"]                 $ws9
 #
 #######################################################################
 
-for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 1920 1080
-for_window [instance="dropdown"] move scratchpad
-for_window [instance="dropdown"] border none
-exec --no-startup-id $term -n dropdown -A 0.8 -f "$primary_font" -e tmux
+for_window [instance="(?i)dropdown"] floating enable
+for_window [instance="(?i)dropdown"] resize set 1920 1080
+for_window [instance="(?i)dropdown"] move scratchpad
+for_window [instance="(?i)dropdown"] border none
 
-for_window [instance="math"] floating enable
-for_window [instance="math"] resize set 800 300
-for_window [instance="math"] move scratchpad
-for_window [instance="math"] border none
-exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q
+for_window [instance="(?i)math"] floating enable
+for_window [instance="(?i)math"] resize set 800 300
+for_window [instance="(?i)math"] move scratchpad
+for_window [instance="(?i)math"] border none
 
 #######################################################################
 #
