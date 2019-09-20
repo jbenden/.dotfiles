@@ -1,0 +1,56 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export GPG_AGENT_INFO:/home/jbenden/\x2egnupg/S\x2egpg\x2dagent\x3a6030\x3a1
+SETUVAR --export SSH_AGENT_PID:2869
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dQq0osiUZ7FdY/agent\x2e2757
+SETUVAR __fish_init_1_50_0:\x1d
+SETUVAR __fish_init_2_3_0:\x1d
+SETUVAR __fish_init_3_x:\x1d
+SETUVAR _fish_abbr_acbuild:autoreconf\x20\x2dvif\x20\x26\x26\x20\x2e/configure\x20\x2d\x2dwith\x2dexperimental\x20\x26\x26\x20make\x20\x26\x26\x20make\x20check
+SETUVAR _fish_abbr_alu:apt\x20list\x20\x2d\x2dupgradable
+SETUVAR _fish_abbr_ci:watch\x20\x2de\x20\x2dn\x2060\x20\x2dc\x20gh\x2dstatus
+SETUVAR _fish_abbr_docker_2D_compose:env\x20TMP\x3d/home/jbenden/tmp\x20docker\x2dcompose
+SETUVAR _fish_abbr_e:/usr/bin/nvim
+SETUVAR _fish_abbr_f:ranger
+SETUVAR _fish_abbr_g:git\x20status
+SETUVAR _fish_abbr_gotop:\x7e/go/bin/gotop
+SETUVAR _fish_abbr_gx:git\x20log\x20\x2d\x2dpretty\x3doneline\x20\x2d\x2dgraph\x20\x2d\x2dall\x20\x2d\x2dabbrev\x2dcommit
+SETUVAR _fish_abbr_hex:od\x20\x2dt\x20\x2dx1
+SETUVAR _fish_abbr_less:bat
+SETUVAR _fish_abbr_more:bat
+SETUVAR _fish_abbr_mpv:mpv\x20\x2d\x2dvo\x3dvdpau\x20\x2d\x2dhwdec\x3dvdpau
+SETUVAR _fish_abbr_sysinfo:inxi\x20\x2dv5\x20\x2dxxx
+SETUVAR _fish_abbr_tm:tmux\x20a\x20\x7c\x7c\x20tmux
+SETUVAR _fish_abbr_v:/usr/bin/nvim
+SETUVAR _fish_abbr_weather:\x7e/go/bin/wego\x20\x2dd\x204
+SETUVAR _fish_abbr_x:sxiv\x20\x2dft\x20\x2a
+SETUVAR fish_color_autosuggestion:555\x1eyellow
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:005fd7\x1epurple
+SETUVAR fish_color_comment:red
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:009900
+SETUVAR fish_color_error:red\x1e\x2d\x2dbold
+SETUVAR fish_color_escape:cyan
+SETUVAR fish_color_history_current:cyan
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_match:cyan
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:cyan
+SETUVAR fish_color_param:00afff\x1ecyan
+SETUVAR fish_color_quote:brown
+SETUVAR fish_color_redirection:normal
+SETUVAR fish_color_search_match:\x2d\x2dbackground\x3dpurple
+SETUVAR fish_color_selection:\x2d\x2dbackground\x3dpurple
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x1b\x5b32mhelp\x1b\x5b30m\x1b\x28B\x1b\x5bm\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:normal
+SETUVAR fish_pager_color_description:555\x1eyellow
+SETUVAR fish_pager_color_prefix:cyan
+SETUVAR fish_pager_color_progress:cyan
+SETUVAR fish_user_abbreviations:g\x20git\x20status\x1egx\x20git\x20log\x20\x2d\x2dpretty\x3doneline\x20\x2d\x2dgraph\x20\x2d\x2dall\x20\x2d\x2dabbrev\x2dcommit\x1emore\x20bat\x1eless\x20bat\x1eweather\x20\x7e/go/bin/wego\x20\x2dd\x204\x1egotop\x20\x7e/go/bin/gotop\x1etm\x20tmux\x20a\x20\x7c\x7c\x20tmux\x1empv\x20mpv\x20\x2d\x2dvo\x3dvdpau\x20\x2d\x2dhwdec\x3dvdpau\x1ehex\x20od\x20\x2dt\x20\x2dx1\x1eacbuild\x20autoreconf\x20\x2dvif\x20\x26\x26\x20\x2e/configure\x20\x2d\x2dwith\x2dexperimental\x20\x26\x26\x20make\x20\x26\x26\x20make\x20check\x1edocker\x2dcompose\x20env\x20TMP\x3d/home/jbenden/tmp\x20docker\x2dcompose\x1ealu\x20apt\x20list\x20\x2d\x2dupgradable\x1ef\x20ranger\x1ee\x20/usr/bin/nvim\x1ev\x20/usr/bin/nvim\x1ex\x20sxiv\x20\x2dft\x20\x2a\x1esysinfo\x20inxi\x20\x2dv5\x20\x2dxxx\x1eci\x20watch\x20\x2de\x20\x2dn\x2060\x20\x2dc\x20gh\x2dstatus
+SETUVAR keychain_init_args:\x2d\x2dquiet\x1e\x2d\x2dagents\x1essh\x2cgpg\x1ehcbsd\x2d01_ecdsa\x1egithub\x2djbenden\x2decdsa\x1egcc\x2dcompile\x2dfarm\x1egitlab\x2djbenden\x2ded25519\x1ejbenden_gitolite\x1e2C5879C2
+SETUVAR theme_color_scheme:gruvbox
