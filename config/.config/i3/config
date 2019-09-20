@@ -417,6 +417,7 @@ for_window [class="(?i)qemu-system"] floating enable
 for_window [class="(?i)Remmina" title="(?i)Remmina Remote Desktop Client"] floating enable
 
 for_window [class="(?i)VirtualBox" title="(?i)Manager"] floating enable
+for_window [class="(?i)VirtualBox"] floating enable
 
 # BUG: https://www.virtualbox.org/ticket/15863
 #for_window [class="(?i)VirtualBox"] floating enable
