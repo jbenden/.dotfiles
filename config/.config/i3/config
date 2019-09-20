@@ -529,4 +529,4 @@ exec --no-startup-id bash $HOME/bin/autostart.sh
 # start the JetBrains Toolbox
 #exec --no-startup-id /home/jbenden/bin/jetbrains-toolbox-1.13.4733/jetbrains-toolbox
 # top bar
-exec_always --no-startup-id bash $HOME/.config/polybar/polybar.sh example
+exec_always --no-startup-id bash $HOME/.config/polybar/polybar.sh example bottom
