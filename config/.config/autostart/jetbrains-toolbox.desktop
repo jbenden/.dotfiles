@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=JetBrains Toolbox
+TryExec=/home/jbenden/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox
 Exec=/home/jbenden/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
 Icon=/home/jbenden/.local/share/JetBrains/Toolbox/toolbox.svg
 StartupNotify=false

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=ProtonMail Bridge
+TryExec=/usr/lib/protonmail/bridge/protonmail-bridge
 # Exec="/usr/lib/protonmail/bridge/protonmail-bridge.sh" "--no-window"
 Exec="/usr/lib/protonmail/bridge/protonmail-bridge" "--no-window"
 X-GNOME-Autostart-enabled=true
