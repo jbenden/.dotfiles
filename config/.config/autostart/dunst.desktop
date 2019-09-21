@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Dunst
+TryExec=/usr/bin/dunst
 Exec="/usr/bin/dunst" "-config" "/home/jbenden/.cache/wal/colors-dunstrc"
 X-GNOME-Autostart-enabled=true
 StartupNotify=false

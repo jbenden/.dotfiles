@@ -1,5 +1,6 @@
 [Desktop Entry]
 Type=Application
+TryExec=/usr/bin/plank
 Exec=/usr/bin/plank
 Hidden=false
 NoDisplay=false
