@@ -5,7 +5,8 @@
 set $mod Mod4
 set $editor nvim
 set $term /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st
-set $primary_font Iosevka Term:antialias=true:hinting=true:size=16
+#set $primary_font Iosevka Term:antialias=true:hinting=true:size=16
+set $primary_font Cascadia Code:antialias=true:hinting=true:size=15
 
 set_from_resource $darkred     color1  #000000
 set_from_resource $red         color9  #000000
