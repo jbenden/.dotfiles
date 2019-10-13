@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -euf
+
+url=$(echo | rofi -dmenu -p "Enter URL:")
+title=$(echo | rofi -dmenu -p "Enter Title:")
+
+cd ~/Downloads
+wkhtmltopdf "$url" "${title}.pdf" || rofi -e "Failed to download URL."
+
+exit 0
