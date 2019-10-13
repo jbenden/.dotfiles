@@ -163,7 +163,7 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
 # %%hotkey: Toggle the R-lang scratchpad window %%
-bindsym $mod+a [instance="math"] scratchpad show; [instance="math"] move position center
+#bindsym $mod+a [instance="math"] scratchpad show; [instance="math"] move position center
 
 # %%hotkey: Toggle sticky mode %%
 bindsym $mod+Shift+s sticky toggle
@@ -226,6 +226,9 @@ bindsym $mod+Shift+backslash exec scrot '%Y%m%d%H%M%S-Screenshot.png' -d 2 -e 'm
 
 # %%hotkey: Perform a desktop-wide search %%
 # bindsym $mod+slash exec --no-startup-id recoll
+
+# %%hotkey: Launch engineering calculator %%
+bindsym $mod+a exec --no-startup-id qalculate-gtk
 
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
