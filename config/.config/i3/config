@@ -284,6 +284,9 @@ bindsym $mod+r mode "resize"
 # %%hotkey: Browse the web %%
 bindsym $mod+Shift+w exec --no-startup-id $BROWSER
 
+# %%hotkey: Save web page to PDF document %%
+bindsym $mod+p exec --no-startup-id $HOME/bin/dmenupdf
+
 # %%hotkey: Display i3 help %%
 bindsym $mod+F1 exec --no-startup-id $HOME/bin/dmenu_hotkeys.py i3
 
