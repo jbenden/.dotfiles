@@ -215,11 +215,11 @@ type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 format-prefix = " "
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = <
+icon-stop = X
+icon-play = O
+icon-pause = -
+icon-next = >
 
 label-song-maxlen = 192
 label-song-ellipsis = true
