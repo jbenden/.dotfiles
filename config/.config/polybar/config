@@ -108,7 +108,8 @@ font-1 = "Ubuntu Mono Nerd Font:size=11;2"
 
 modules-left = mpd volume
 modules-center = date
-modules-right = cpu memory wlan eth battery temperature pkg
+;modules-right = cpu memory wlan eth battery temperature pkg
+modules-right = cpu memory temperature pkg
 
 ;wm-restack = bspwm
 wm-restack = i3
