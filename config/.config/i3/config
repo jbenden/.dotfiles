@@ -550,7 +550,8 @@ exec --no-startup-id /usr/bin/numlockx on
 # enable MPD
 exec --no-startup-id mpd
 # mount the backup drive
-exec --no-startup-id udisksctl mount -b /dev/sda1
+# exec --no-startup-id udisksctl mount -b /dev/sda1
+# exec --no-startup-id udisksctl mount -b /dev/disk/by-label/Archival
 
 exec --no-startup-id bash $HOME/bin/autostart.sh
 
