@@ -428,11 +428,11 @@ menu-1-1 = reboot
 menu-1-1-exec = sudo -A systemctl reboot now
 ;menu-1-1-exec = /usr/lib/kde4/libexec/kdesu systemctl reboot now
 
-menu-2-0 = power off
-menu-2-0-exec = sudo -A systemctl poweroff
+menu-2-0 = cancel
+menu-2-0-exec = menu-open-0
+menu-2-1 = power off
+menu-2-1-exec = sudo -A poweroff
 ;menu-2-0-exec = /usr/lib/kde4/libexec/kdesu systemctl poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [module/pkg]
 type = custom/script
