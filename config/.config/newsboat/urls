@@ -14,9 +14,9 @@ https://github.com/dunst-project/dunst/commits.atom "~Dunst (Commits on GH)" "so
 # http://lukesmith.xyz/rss.xml
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith (YouTube)" "fun"
 
-https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~Linus Tech Tips (YouTube)" "tech" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC0vBXGSyV14uvJ4hECDOl0Q "~Techquickie (YouTube)" "tech" "news" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCeeFfhMcJa1kjtfZAGskOCA "~TechLinked (YouTube)" "tech" "news" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~Linus Tech Tips (YouTube)" "tech" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UC0vBXGSyV14uvJ4hECDOl0Q "~Techquickie (YouTube)" "tech" "news" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCeeFfhMcJa1kjtfZAGskOCA "~TechLinked (YouTube)" "tech" "news" "fun"
 
 https://twitrss.me/twitter_user_to_rss/?user=jbenden "~Joseph Benden (Twitter)"
 
@@ -24,8 +24,6 @@ https://www.theminimalists.com/feed/ "~theMinimalists" "zen" "minimalism" "focus
 https://feeds.feedburner.com/zenhabits "~ZenHabits" "zen" "minimalism" "focus" "inspiring"
 
 https://blog.qutebrowser.org/feeds/all.rss.xml "tech" "software"
-
-https://www.phoronix.com/rss.php "tech" "~Phoronix"
 
 http://neverworkintheory.org/feed.xml "programming"
 http://blog.martinig.ch/feed/ "programming" "testing"
@@ -48,14 +46,22 @@ https://herbsutter.com/feed/ "tech" "programming" "c++"
 https://blog.atomist.com/rss/ "tech" "startup"
 https://bootlin.com/feed/rss/ "tech" "programming"
 http://dlang.org/blog/index.php/feed/ "programming"
-https://embeddedartistry.com/blog?format=RSS "c++" "programming" "consulting" "embedded"
+https://embeddedartistry.com/feed/ "c++" "programming" "consulting" "embedded"
 https://awfulcode.io/feed/ "c++" "programming"
 https://drewdevault.com/feed.xml "programming" "~Drew DeVault Blog"
 https://embeddedgurus.com/barr-code/feed/ "programming" "~Embedded Gurus (Barr Code)"
+https://travisdowns.github.io/feed.xml "programming" "performance" "hpc" "c++" "~Performance Matters"
+https://foonathan.net/post/feed.xml "programming" "performance" "c++" "~foonathan::blog()"
 
 https://github.com/clearlinux-pkgs/glibc/commits.atom "~Clear Glibc (Commits on GH)" "software"
 https://github.com/clearlinux-pkgs/linux/commits.atom "~Clear Linux (Commits on GH)" "software"
 https://www.kernel.org/feeds/kdist.xml "software"
+https://greenteapress.com/wp/feed/ "software" "books" "~Green Tea Press" "c" "c++" "python"
+https://voidlinux.org/atom.xml "~VoidLinux News" "software" "linux"
+
+https://isocpp.org/blog/rss "tech" "~ISO C++" "programming" "c" "c++"
+https://www.phoronix.com/rss.php "tech" "~Phoronix"
+https://rss.acm.org/technews/TechNews.xml "technews" "news"
 
 http://rss.cnn.com/rss/cnn_topstories.rss "news"
 
