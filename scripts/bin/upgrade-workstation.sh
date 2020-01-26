@@ -1,6 +1,43 @@
 #!/bin/bash
 
-set -eufx
+set -euf
+
+RESTART=0
+
+# check for upgrades that need a reboot
+if xbps-install -n -Mu | grep -qE '^(linux5\.|void)'; then
+	RESTART=1
+fi
+
+# upgrade all packages
+echo "************************** Upgrade ******************************"
+xbps-install -Suy
+
+# cleanup orphan packages
+echo "*********************** Remove Orphans **************************"
+xbps-query -O | xargs --no-run-if-empty sudo xbps-remove
+
+# cleanup old kernels
+echo "********************** Purge old kernels ************************"
+#vkpurge rm all
+
+# list services to be restarted
+#su -s /bin/sh -c xcheckrestart nobody
+#xcheckrestart
+
+echo "****************** Programs that need restart *******************"
+/home/jbenden/bin/xcheckrestart | cut -d' ' -f2 | sort | uniq
+
+if [ $RESTART -ne 0 ]; then
+	echo "*********************** RESTART REQUIRED ************************"
+fi
+
+# DONE
+exit 0
+
+#
+# UBUNTU or DEBIAN
+#
 
 echo "I: Gathering APT repository updates..."
 env DEBIAN_FRONTEND=noninteractive apt-get -qq update

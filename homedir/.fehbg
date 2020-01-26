@@ -1,2 +1,3 @@
 #!/bin/sh
-feh  --bg-fill '/home/jbenden/Pictures/Wallpapers/Vibrant/splatter.jpg' 
+#feh --no-fehbg --bg-fill '/home/jbenden/Pictures/Wallpapers/Vibrant/splatter.jpg' 
+feh --no-fehbg --bg-fill '/home/jbenden/Pictures/Wallpapers/wallhaven-397rmv.jpg'
