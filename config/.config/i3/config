@@ -6,7 +6,8 @@ set $mod Mod4
 set $editor nvim
 set $term /home/jbenden/Source/Third-Party/st-LukeSmithxyz/st
 #set $primary_font Iosevka Term:antialias=true:hinting=true:size=16
-set $primary_font Cascadia Code:antialias=true:hinting=true:size=15
+#set $primary_font Cascadia Code:antialias=true:hinting=true:size=15
+set $primary_font M+ 1m:antialias=true:hinting=true:size=15
 
 set_from_resource $darkred     color1  #000000
 set_from_resource $red         color9  #000000
@@ -58,18 +59,6 @@ client.focused_inactive $black      $black      $white      $darkblack  $grey
 client.urgent           $darkred    $darkred    $black      $darkred    $orange
 client.background       $black
 
-
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -80,7 +69,7 @@ bindsym $mod+Shift+Return exec $term
 bindsym $mod+Return exec kitty
 
 # %%hotkey: Browse Bookmarks %%
-bindsym $mod+b exec buku_run
+# bindsym $mod+b exec --no-startup-id $HOME/bin/buku_run
 
 # %%hotkey: Lock terminal %%
 bindsym $mod+Ctrl+q exec --no-startup-id $HOME/bin/locks.sh
@@ -196,7 +185,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+p exec keepassxc
 
 # %%hotkey: Open news feeds reader %%
-bindsym $mod+Shift+n exec --no-startup-id kitty --class=rss newsboat
+bindsym $mod+Shift+n exec --no-startup-id kitty --class=rss -o initial_window_height=50c newsboat
 
 # %%hotkey: Open music player %%
 bindsym $mod+m exec --no-startup-id kitty --class=music ncmpcpp
@@ -241,7 +230,7 @@ mode "$mode_launcher" {
     bindsym b exec brave-browser
     bindsym c exec google-chrome
     bindsym C exec code
-    bindsym f exec firefox --no-remote -P default
+    bindsym f exec firefox -P default
     bindsym n exec notable
     bindsym t exec thunderbird
 	bindsym r exec firefox --no-remote --class=FFSecond -P Second
@@ -294,16 +283,16 @@ bindsym $mod+p exec --no-startup-id $HOME/bin/dmenupdf
 bindsym $mod+F1 exec --no-startup-id $HOME/bin/dmenu_hotkeys.py i3
 
 # %%hotkey: Display application menu %%
-bindsym $mod+Escape exec --no-startup-id jgmenu_run
+bindsym $mod+Escape exec --no-startup-id rofi -theme $HOME/.config/i3/drun.rasi -show drun
 
 # Pulse Audio controls
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
-# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
 
-bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/bin/volume_control.py down 5
-bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/bin/volume_control.py up 5
-bindsym XF86AudioMute exec --no-startup-id $HOME/bin/volume_control.py toggle
+#bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/bin/volume_control.py down 5
+#bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/bin/volume_control.py up 5
+#bindsym XF86AudioMute exec --no-startup-id $HOME/bin/volume_control.py toggle
 # bindsym $mod+Shift+v exec --no-startup-id "killall pavucontrol; $HOME/bin/fullscreen_wrap.sh pavucontrol -t 3"
 
 # Sreen brightness controls
@@ -435,6 +424,7 @@ for_window [class="(?i)pinentry"] floating enable
 for_window [class="(?i)mpv"] floating enable
 for_window [class="(?i)jetbrains-toolbox"] floating enable
 for_window [class="(?i)jetbrains-" title="^ $"] floating enable
+for_window [class="(?i)jetbrains-" title="^ $"] border pixel 0
 for_window [class="(?i)nm-connection-editor"] floating enable
 for_window [class="(?i)steam" title="(?i)Friends List"] floating enable
 
@@ -447,11 +437,11 @@ for_window [instance="__nmtui"] floating enable
 #for_window [class="(?i)pavucontrol" instance="pavucontrol-bar"] move down $height px
 for_window [class="(?i)pulseeffects"] floating enable, border pixel 0, move position 2216 1490, move workspace $ws7
 
-for_window [class="(?i)doublecmd"] floating enable
-for_window [class="(?i)doublecmd"] resize set 2526 1376
-for_window [class="(?i)doublecmd"] sticky enable
-for_window [class="(?i)doublecmd"] move position center
-for_window [class="(?i)doublecmd" instance="Doublecmd"] move down $height px
+for_window [instance="(?i)doublecmd"] floating enable
+for_window [instance="(?i)doublecmd" window_type="normal"] resize set 2526 1376
+#for_window [instance="(?i)doublecmd" window_type="normal"] sticky enable
+for_window [instance="(?i)doublecmd" window_type="normal"] move position center
+for_window [instance="(?i)doublecmd" window_type="normal" class="Doublecmd"] move down $height px
 
 for_window [instance="htop"] floating enable
 for_window [instance="htop"] resize set 1438 863
@@ -463,7 +453,7 @@ for_window [instance="vtop"] move position 740 121
 
 for_window [instance="rss"] floating enable
 for_window [instance="rss"] border none
-for_window [instance="rss"] resize set 1438 863
+for_window [instance="rss"] resize set 1438 1726
 for_window [instance="rss"] move position 740 121
 
 for_window [instance="ranger"] floating enable
@@ -479,7 +469,7 @@ for_window [instance="music"] move position center
 for_window [instance="cava"] floating enable
 for_window [instance="cava"] resize set 1608 198
 for_window [instance="cava"] sticky enable
-for_window [instance="cava"] border none
+for_window [instance="cava"] border pixel 0
 for_window [instance="cava"] move position 2214 1949
 
 assign [class="(?i)calibre-gui"]                 $ws5
@@ -525,22 +515,26 @@ for_window [instance="(?i)math"] border none
 # Wallpaper
 exec_always --no-startup-id bash $HOME/.fehbg
 # Theme and Wallpaper
-exec_always --no-startup-id wal -R &
+exec_always --no-startup-id wal -R
 # compositor
-exec --no-startup-id compton -b &
+#exec --no-startup-id compton -b &
+exec --no-startup-id xcompmgr -cfCFD 5
+
 # notification daemon
 # exec_always --no-startup-id dunst -lb "$black" -nb "$black" -cb "$black" -lf "$darkred" -bf "$darkred" -cf "$darkred" -nf "$darkred" -fn "ypn envypn 12" -s -lto 3 -nto 5 -cto 0
 # exec_always --no-startup-id dunst -config /home/jbenden/.cache/wal/colors-dunstrc
 exec --no-startup-id conky -d
+# start X11 settings daemon to improve font display
+exec --no-startup-id xsettingsd &
 # handle screensaver
 exec --no-startup-id xset +dpms
 exec --no-startup-id xset s 900
 exec --no-startup-id xset dpms 300 600 1200
 exec --no-startup-id xautolock -time 30 -locker $HOME/bin/locks.sh &
 # automatically hide the cursor
-exec --no-startup-id /home/jbenden/Source/Third-Party/unclutter-xfixes/unclutter -b
+exec --no-startup-id unclutter -b
 # enable numlock key
-exec --no-startup-id /usr/bin/numlockx on
+exec --no-startup-id numlockx on
 
 # exec --no-startup-id $term -n dropdown -A 0.8 -f "$primary_font" -e tmux
 # exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q

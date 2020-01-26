@@ -25,7 +25,7 @@ if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
     set guifont=Menlo:h12
     set transparency=7
-  elseif has("gui_gtk2") || has("gui_gtk3")
+  elseif has("gui_gtk2") || has("gui_gtk3") || has("gui_qt5")
     set guifont=Source\ Code\ Pro\ 16
   endif
 
@@ -41,6 +41,8 @@ else
 
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
+  elseif $COLORTERM == 'kitty-256colors'
+	set term=xterm-256color
   else
     if $TERM == 'xterm'
       set term=xterm-256color
@@ -65,7 +67,7 @@ set conceallevel=2
 set concealcursor=vin
 let g:clang_use_library=1
 "" let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
-let g:clang_library_path='/usr/lib/llvm-5.0/lib/libclang.so.1'
+let g:clang_library_path='/usr/lib/libclang.so.9'
 let g:clang_complete_auto=1
 let g:clang_periodic_quickfix=1
 let g:clang_snippets=1
@@ -136,15 +138,15 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 let g:syntastic_python_checkers=['python', 'flake8']
 let g:syntastic_c_checkers=['clang_check']
-let g:syntastic_c_clang_check_exec='/usr/bin/clang-check-5.0'
+let g:syntastic_c_clang_check_exec='/usr/bin/clang-check'
 let g:syntastic_c_clang_check_post_args=""
 let g:syntastic_cpp_checkers=['clang_check']
-let g:syntastic_cpp_clang_check_exec='/usr/bin/clang-check-5.0'
+let g:syntastic_cpp_clang_check_exec='/usr/bin/clang-check'
 let g:syntastic_cpp_clang_check_post_args=""
 
 "" python provider
 " let g:python3_host_prog = '/opt/anaconda3/bin/python3.7'
-let g:python_host_prog = '/usr/bin/python2.7'
+let g:python3_host_prog = '/usr/bin/python3'
 
 " Keep cursor in the middle {{{
 set scrolloff=9999

@@ -123,7 +123,7 @@ case "$(uname -s)" in
 		CPUS=`nproc`
 		alias pscgroup='ps wwHaexo pid,ppid,user,cgroup:160,comm,command --width 9000 | less -S'
 		alias lint='/home/jbenden/bin/flexelint/src/flexelint /home/jbenden/bin/flexelint/src/std.lnt'
-		alias mpv="mpv --vo=vdpau --hwdec=vdpau"
+		alias mpv="mpv --vo=gpu --hwdec=vdpau"
 		alias vfide="/home/jbenden/bin/verifast-18.02/binvfide -prover z3v4.5"
 		alias verifast="/home/jbenden/bin/verifast-18.02/binverifast -prover z3v4.5"
 		alias hex='od -t x1'

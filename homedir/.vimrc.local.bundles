@@ -7,7 +7,7 @@ Plug 'rhysd/vim-clang-format'
 Plug 'PotatoesMaster/i3-vim-syntax'
 
 "" Magit clone
-Plug 'jreybert/vimagit'
+"Plug 'jreybert/vimagit'
 
 "" javascript
 Plug 'jelera/vim-javascript-syntax'

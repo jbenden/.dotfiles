@@ -1,3 +1,4 @@
+set debug-file-directory /usr/lib/debug
 set breakpoint pending on
 # set confirm off
 # set disassembly-flavor intel
