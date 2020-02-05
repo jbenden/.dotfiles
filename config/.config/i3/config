@@ -518,7 +518,7 @@ for_window [instance="(?i)math"] border none
 # Wallpaper
 exec_always --no-startup-id bash $HOME/.fehbg
 # Theme and Wallpaper
-exec_always --no-startup-id wal -R
+#exec --no-startup-id wal -R
 # compositor
 #exec --no-startup-id compton -b &
 exec --no-startup-id xcompmgr -cfCFD 5
@@ -528,7 +528,7 @@ exec --no-startup-id xcompmgr -cfCFD 5
 # exec_always --no-startup-id dunst -config /home/jbenden/.cache/wal/colors-dunstrc
 exec --no-startup-id conky -d
 # start X11 settings daemon to improve font display
-exec --no-startup-id xsettingsd &
+# exec --no-startup-id xsettingsd &
 # handle screensaver
 exec --no-startup-id xset +dpms
 exec --no-startup-id xset s 900
@@ -537,7 +537,7 @@ exec --no-startup-id xautolock -time 30 -locker $HOME/bin/locks.sh &
 # automatically hide the cursor
 exec --no-startup-id unclutter -b
 # enable numlock key
-exec --no-startup-id numlockx on
+#exec --no-startup-id numlockx on
 
 # exec --no-startup-id $term -n dropdown -A 0.8 -f "$primary_font" -e tmux
 # exec --no-startup-id $term -n math -f mono:pixelsize=24 -e R -q
@@ -545,7 +545,7 @@ exec --no-startup-id numlockx on
 # enable NetworkManager applet
 # exec --no-startup-id nm-applet &
 # enable MPD
-exec --no-startup-id mpd
+#exec --no-startup-id mpd
 # mount the backup drive
 # exec --no-startup-id udisksctl mount -b /dev/sda1
 # exec --no-startup-id udisksctl mount -b /dev/disk/by-label/Archival
