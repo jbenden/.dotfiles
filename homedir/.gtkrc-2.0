@@ -3,7 +3,7 @@
 
 gtk-theme-name="FlatColor"
 gtk-icon-theme-name="gruvbox-soft"
-gtk-font-name="Hack 14"
+gtk-font-name="Hack 12"
 # gtk-cursor-theme-name="Adwaita"
 # gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
