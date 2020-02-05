@@ -15,3 +15,6 @@ set -x VDPAU_DRIVER va_gl
 
 # fix broken tray menu and in-app shortcuts on Ubuntu/Unity
 set -x UBUNTU_MENUPROXY ''
+
+set -x XBPS_DISTDIR "$HOME/Source/void-packages"
+
