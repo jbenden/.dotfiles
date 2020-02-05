@@ -3,19 +3,27 @@
 set -euf
 
 RESTART=0
+XBPS_NEEDS_UPGRADE=0
 
 # check for upgrades that need a reboot
 if xbps-install -n -Mu | grep -qE '^(linux5\.|void)'; then
 	RESTART=1
 fi
 
+if xbps-install -n -Mu | grep -qE '^(libxbps|xbps)'; then
+	XBPS_NEEDS_UPGRADE=1
+fi
+
 # upgrade all packages
 echo "************************** Upgrade ******************************"
+if [ $XBPS_NEEDS_UPGRADE -eq 1 ]; then
+	xbps-install -Su xbps
+fi
 xbps-install -Suy
 
 # cleanup orphan packages
 echo "*********************** Remove Orphans **************************"
-xbps-query -O | xargs --no-run-if-empty sudo xbps-remove
+xbps-query -O | xargs --no-run-if-empty sudo xbps-remove -y
 
 # cleanup old kernels
 echo "********************** Purge old kernels ************************"
