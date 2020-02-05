@@ -8,7 +8,7 @@ set -x SCRIPT_DIR "$HOME/bin"
 set -x PATH "$PATH:$HOME/bin"
 set -x PASSIVE_FTP 1
 set -x INPUTRC "$HOME/.inputrc"
-set -x PAGER /usr/bin/less
+set -x PAGER /usr/bin/bat
 # set -x TMPDIR /home/jbenden/tmp
 set -x SAL_USE_VCLPLUGIN kde5
 set -x VDPAU_DRIVER va_gl
