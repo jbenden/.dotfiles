@@ -1,10 +1,11 @@
 [Desktop Entry]
 Type=Application
 Name=Terminal Dropdown
-TryExec=tmux
-#Exec=/home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -n dropdown -f "Iosevka Term:antialias=true:hinting=true:size=16" -A 0.8 -e tmux
+#TryExec=tmux
+TryExec=/home/jbenden/Source/Third-Party/st-LukeSmithxyz/st
+Exec=/home/jbenden/Source/Third-Party/st-LukeSmithxyz/st -n dropdown -f "M+ 1m:antialias=true:hinting=true:size=12" -A 0.92
 #Exec=kitty --class=dropdown tmux
-Exec=kitty -o background_opacity=0.92 --class=dropdown
+#Exec=kitty -o background_opacity=0.92 --class=dropdown
 X-GNOME-Autostart-enabled=true
 StartupNotify=false
 Terminal=false
