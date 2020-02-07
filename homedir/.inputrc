@@ -26,6 +26,11 @@ set show-all-if-ambiguous on
 set enable-stats on
 $endif
 
+$if Fish
+set enable-keypad on
+set enable-stats on
+$endif
+
 $if Bash
 set show-all-if-ambiguous on
 set completion-ignore-case on
