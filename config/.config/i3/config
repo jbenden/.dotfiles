@@ -522,12 +522,12 @@ exec_always --no-startup-id bash $HOME/.fehbg
 #exec --no-startup-id wal -R
 # compositor
 #exec --no-startup-id compton -b &
-exec --no-startup-id xcompmgr -cfCFD 5
+exec --no-startup-id exec xcompmgr -cfCFD 5
 
 # notification daemon
 # exec_always --no-startup-id dunst -lb "$black" -nb "$black" -cb "$black" -lf "$darkred" -bf "$darkred" -cf "$darkred" -nf "$darkred" -fn "ypn envypn 12" -s -lto 3 -nto 5 -cto 0
 # exec_always --no-startup-id dunst -config /home/jbenden/.cache/wal/colors-dunstrc
-exec --no-startup-id conky -d
+exec --no-startup-id exec conky -d
 # start X11 settings daemon to improve font display
 # exec --no-startup-id xsettingsd &
 # handle screensaver
@@ -536,7 +536,7 @@ exec --no-startup-id xset s 900
 exec --no-startup-id xset dpms 300 600 1200
 exec --no-startup-id xautolock -time 30 -locker $HOME/bin/locks.sh &
 # automatically hide the cursor
-exec --no-startup-id unclutter -b
+exec --no-startup-id exec unclutter -b
 # enable numlock key
 #exec --no-startup-id numlockx on
 
