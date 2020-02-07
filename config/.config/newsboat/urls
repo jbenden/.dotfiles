@@ -53,6 +53,7 @@ https://embeddedgurus.com/barr-code/feed/ "programming" "~Embedded Gurus (Barr C
 https://travisdowns.github.io/feed.xml "programming" "performance" "hpc" "c++" "~Performance Matters"
 https://foonathan.net/post/feed.xml "programming" "performance" "c++" "~foonathan::blog()"
 
+https://gitlab.com/post-factum/pf-kernel/-/tags?format=atom "~Post-Factum Kernel (Tags on GL)" "software"
 https://github.com/clearlinux-pkgs/glibc/commits.atom "~Clear Glibc (Commits on GH)" "software"
 https://github.com/clearlinux-pkgs/linux/commits.atom "~Clear Linux (Commits on GH)" "software"
 https://www.kernel.org/feeds/kdist.xml "software"
