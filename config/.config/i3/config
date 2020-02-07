@@ -186,7 +186,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+p exec keepassxc
 
 # %%hotkey: Open news feeds reader %%
-bindsym $mod+Shift+n exec --no-startup-id kitty --class=rss -o initial_window_height=50c newsboat
+#bindsym $mod+Shift+n exec --no-startup-id kitty --class=rss -o initial_window_height=50c newsboat
+bindsym $mod+Shift+n exec --no-startup-id $term -A 0.82 -f "M+ 1m:antialias=true:hinting=true:style=Regular:size=12" -n rss -e newsboat
 
 # %%hotkey: Open music player %%
 bindsym $mod+m exec --no-startup-id kitty --class=music ncmpcpp
